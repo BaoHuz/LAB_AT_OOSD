@@ -99,4 +99,4 @@ Dành cho Giảng viên / Người kiểm thử dự án:
 ---
 
 ## 7. BẰNG CHỨNG THỰC HÀNH (EVIDENCE)
-- [x] File báo cáo chi tiết Word (chứa hình ảnh giao diện thực tế và cấu trúc CSDL chụp từ máy cá nhân) đã được đính kèm trong thư mục `LAB3/BaoCao_LAB3.docx`.
+- [x] File báo cáo chi tiết Word (chứa hình ảnh giao diện thực tế và cấu trúc CSDL chụp từ máy cá nhân) đã được đính kèm trong thư mục `LAB3/1250080016_NguyenHuuBao_12_ĐH_CNPM1_LAB3.docx`.

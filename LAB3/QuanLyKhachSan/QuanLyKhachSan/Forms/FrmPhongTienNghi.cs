@@ -16,7 +16,7 @@ namespace QuanLyKhachSan.Forms
 
         private void FrmPhongTienNghi_Load(object sender, EventArgs e)
         {
-            // Nạp dữ liệu vào các ComboBox
+
             cboKhu.DataSource = dm.LayKhuVuc();
             cboKhu.DisplayMember = "TenKhuVuc";
             cboKhu.ValueMember = "MaKhuVuc";

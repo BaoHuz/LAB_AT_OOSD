@@ -626,7 +626,7 @@
         private System.Windows.Forms.TabPage tabQuyDinhDenBu;
         private System.Windows.Forms.Button btnDong;
 
-        // Tab Khu vực
+
         private System.Windows.Forms.Label lblKhuMa;
         private System.Windows.Forms.TextBox txtKhuMa;
         private System.Windows.Forms.Label lblKhuTen;
@@ -634,7 +634,7 @@
         private System.Windows.Forms.Button btnThemKhu;
         private System.Windows.Forms.DataGridView dgvKhu;
 
-        // Tab Nhân viên
+
         private System.Windows.Forms.Label lblNVMa;
         private System.Windows.Forms.TextBox txtNVMa;
         private System.Windows.Forms.Label lblNVTen;
@@ -646,7 +646,7 @@
         private System.Windows.Forms.Button btnThemNV;
         private System.Windows.Forms.DataGridView dgvNV;
 
-        // Tab Loại tiện nghi
+
         private System.Windows.Forms.Label lblLoaiMa;
         private System.Windows.Forms.TextBox txtLoaiMa;
         private System.Windows.Forms.Label lblLoaiTen;
@@ -654,7 +654,7 @@
         private System.Windows.Forms.Button btnThemLoaiTN;
         private System.Windows.Forms.DataGridView dgvLoaiTN;
 
-        // Tab Dịch vụ
+
         private System.Windows.Forms.Label lblDVMa;
         private System.Windows.Forms.TextBox txtDVMa;
         private System.Windows.Forms.Label lblDVTen;
@@ -666,7 +666,7 @@
         private System.Windows.Forms.Button btnThemDV;
         private System.Windows.Forms.DataGridView dgvDV;
 
-        // Tab Quy định đền bù
+
         private System.Windows.Forms.Label lblQDMa;
         private System.Windows.Forms.TextBox txtQDMa;
         private System.Windows.Forms.Label lblQDLoai;

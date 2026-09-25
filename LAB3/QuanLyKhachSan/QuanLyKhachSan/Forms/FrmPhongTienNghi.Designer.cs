@@ -560,7 +560,7 @@
         private System.Windows.Forms.TabPage tabLapDat;
         private System.Windows.Forms.Button btnDong;
 
-        // Tab Phòng
+
         private System.Windows.Forms.Label lblPhong;
         private System.Windows.Forms.TextBox txtPhong;
         private System.Windows.Forms.Label lblKhu;
@@ -581,7 +581,7 @@
         private System.Windows.Forms.Button btnLapDat;
         private System.Windows.Forms.Button btnThemPhong;
 
-        // Tab Tiện nghi
+
         private System.Windows.Forms.Label lblMaTN;
         private System.Windows.Forms.TextBox txtMaTN;
         private System.Windows.Forms.Label lblLoai;
@@ -593,7 +593,7 @@
         private System.Windows.Forms.Button btnThemTN;
         private System.Windows.Forms.DataGridView dgvTN;
 
-        // Tab Lắp đặt / luân chuyển
+
         private System.Windows.Forms.Label lblNgay;
         private System.Windows.Forms.DateTimePicker dtNgay;
         private System.Windows.Forms.Label lblNV;

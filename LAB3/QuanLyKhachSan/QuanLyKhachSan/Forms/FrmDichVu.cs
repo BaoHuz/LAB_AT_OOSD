@@ -18,7 +18,7 @@ namespace QuanLyKhachSan.Forms
 
         private void FrmDichVu_Load(object sender, EventArgs e)
         {
-            // Nạp các lượt lưu trú ở trạng thái "Đang ở"
+
             cboLuot.DataSource = s.LayPhieuDangO();
             cboLuot.DisplayMember = "SoPhieuDat";
             cboLuot.ValueMember = "SoPhieuDat";

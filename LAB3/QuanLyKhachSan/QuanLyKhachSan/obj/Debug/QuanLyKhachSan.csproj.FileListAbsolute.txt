@@ -10,3 +10,15 @@ C:\Users\Admin\Downloads\PPPTPMHĐT\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug
 C:\Users\Admin\Downloads\PPPTPMHĐT\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb
 C:\Users\Admin\Downloads\PPPTPMHĐT\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe.config
 C:\Users\Admin\Downloads\PPPTPMHĐT\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Forms.FrmPhongTienNghi.resources
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe.config
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.exe
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\bin\Debug\QuanLyKhachSan.pdb
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe.config
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Forms.FrmMain.resources
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Forms.FrmPhongTienNghi.resources
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.Properties.Resources.resources
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.exe
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB3\QuanLyKhachSan\QuanLyKhachSan\obj\Debug\QuanLyKhachSan.pdb

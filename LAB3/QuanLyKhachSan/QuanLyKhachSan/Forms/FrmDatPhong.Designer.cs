@@ -706,7 +706,7 @@
         private System.Windows.Forms.TabPage tabNhanPhong;
         private System.Windows.Forms.Button btnDong;
 
-        // Tab Khách hàng
+
         private System.Windows.Forms.Label lblMaKH;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.Label lblTenKH;
@@ -720,7 +720,7 @@
         private System.Windows.Forms.Button btnThemKhach;
         private System.Windows.Forms.DataGridView dgvKhach;
 
-        // Tab Đặt phòng
+
         private System.Windows.Forms.Label lblSoPhieu;
         private System.Windows.Forms.TextBox txtSoPhieu;
         private System.Windows.Forms.Label lblKhach;
@@ -748,7 +748,7 @@
         private System.Windows.Forms.Button btnThemPhong;
         private System.Windows.Forms.Button btnBoPhong;
 
-        // Tab Nhận phòng / Người lưu trú
+
         private System.Windows.Forms.Label lblPhieuChon;
         private System.Windows.Forms.TextBox txtPhieuChon;
         private System.Windows.Forms.Label lblNguoiPhong;
