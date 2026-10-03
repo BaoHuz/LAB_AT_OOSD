@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\bin\Debug\eShoppingApp.exe.config
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\bin\Debug\eShoppingApp.exe
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\bin\Debug\eShoppingApp.pdb
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.Properties.Resources.resources
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.exe
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.pdb
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB4\eShoppingApp\eShoppingApp\obj\Debug\eShoppingApp.exe.config
