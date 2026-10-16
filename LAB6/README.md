@@ -35,16 +35,21 @@
 3. **Thiết kế Cơ sở dữ liệu SQL Server:**
    * Thiết kế 13 bảng CSDL đạt chuẩn chuẩn hóa, thiết lập đầy đủ Khóa chính (PK), Khóa ngoại (FK), ràng buộc `CHECK` giá trị và chỉ mục `UNIQUE`.
 4. **Thiết kế & Hiện thực Hệ thống WinForms:**
-   * Hiện thực theo kiến trúc 3 lớp (`UI Forms` $\rightarrow$ `Services` $\rightarrow$ `Data/Db.cs`).
+   * Hiện thực theo kiến trúc 3 lớp (`Forms` $\rightarrow$ `Services` $\rightarrow$ `Data/Db.cs`).
    * Sử dụng `Transaction` khi lưu Toa thuốc và Chi tiết toa thuốc để đảm bảo tính toàn vẹn dữ liệu.
 
 ---
 
 ## 📊 KẾT QUẢ ĐẠT ĐƯỢC
-* [x] Hoàn thành 100% tài liệu phân tích và biểu đồ UML theo đúng yêu cầu đề bài.
-* [x] Tạo thành công CSDL `QuanLyHoSoBenhAn` trên SQL Server với các ràng buộc toàn vẹn dữ liệu chặt chẽ.
-* [x] Giao diện WinForms hoạt động ổn định, phân tách rõ ràng giữa lớp xử lý giao diện và lớp dịch vụ nghiệp vụ (Service).
-* [x] Thực hiện đầy đủ kịch bản kiểm thử (Test Cases) từ đăng ký lần đầu, đặt lịch hẹn quý, kê toa thuốc cho đến thanh toán viện phí.
+* **Cơ sở dữ liệu SQL Server:**
+  * Xây dựng thành công CSDL `QuanLyHoSoBenhAn` gồm 13 bảng Entity với đầy đủ khóa chính (PK), khóa ngoại (FK), chỉ mục (`Index`) và các ràng buộc (`CHECK`, `DEFAULT`, `PERSISTED Column`).
+  * Hiện thực các Stored Procedure tích hợp Transaction nâng cao: `sp_DangKyMoi`, `sp_LapToaThuoc`, `sp_DatLichHen`, `sp_HoanTatPhieu` đạt tính toàn vẹn dữ liệu chuẩn ACID.
+* **Biểu đồ Phân tích & Thiết kế (UML):**
+  * Xây dựng hoàn chỉnh Hệ thống Biểu đồ Use Case (Tổng quát, Phân rã đăng ký/khám bệnh, Phân rã lập toa).
+  * Biểu đồ lớp phân tích tổng quát và chi tiết (Class Diagram).
+  * Biểu đồ hoạt động (Activity Diagram) mô tả toàn bộ quy trình từ Đăng ký -> Khám -> Xét nghiệm -> Toa thuốc -> Thanh toán -> Phát thuốc -> Chốt hồ sơ.
+* **Giao diện Ứng dụng (WinForms C#):**
+  * Hiện thực đầy đủ các Form chức năng: `FrmMain`, `FrmDangKy`, `FrmHoSo`, `FrmLichHen`, `FrmKhamBenh`, `FrmXetNghiem`, `FrmLapToa`, `FrmThanhToan`, `FrmPhatThuoc`, `FrmHoanTat`.
 
 ---
 
@@ -87,6 +92,10 @@ Hoặc giải nén file `.zip` bài làm đã nộp.
 2. Nhấn **`F5`** (hoặc chọn nút **Start**) để chạy ứng dụng WinForms.
 
 ### Bước 5: Các kịch bản kiểm thử nhanh cho Giảng viên (Quick Test Flow)
-* **Kịch bản 1 (Bệnh nhân mới):** Chọn menu **Tiếp nhận** $\rightarrow$ Thêm bệnh nhân mới $\rightarrow$ Hệ thống bắt buộc nhập tiền Lệ phí năm $\rightarrow$ Nhấn **Lập hồ sơ** $\rightarrow$ Hệ thống cấp `MaHoSo` mới.
-* **Kịch bản 2 (Tái khám & Kê toa):** Chọn menu **Khám bệnh** $\rightarrow$ Nhập `MaHoSo` $\rightarrow$ Nhập Triệu chứng $\rightarrow$ Mở màn hình **Lập toa thuốc** $\rightarrow$ Chọn thuốc & nhập liều dùng $\rightarrow$ Nhấn **Lưu toa thuốc** (Kiểm tra lưu bằng Transaction thành công).
-* **Kịch bản 3 (Thanh toán & Xuất thuốc):** Chọn menu **Thanh toán viện phí** $\rightarrow$ Chọn phiếu khám $\rightarrow$ Thực hiện thu tiền viện phí $\rightarrow$ Đợt khám chuyển trạng thái hoàn tất và cho phép phát thuốc.
+1. **Đăng ký mới (`FrmDangKy`):** Nhập thông tin bệnh nhân test + Đóng phí 200.000 VNĐ $\rightarrow$ Kiểm tra hệ thống cấp Mã Bệnh nhân & Mã Hồ sơ.
+2. **Đặt lịch hẹn (`FrmLichHen`):** Chọn bệnh nhân vừa tạo $\rightarrow$ Đặt lịch khám định kỳ cho Quý hiện tại.
+3. **Khám bệnh (`FrmKhamBenh`):** Mở phiếu khám $\rightarrow$ Nhập triệu chứng, chẩn đoán $\rightarrow$ Chỉ định 1 dịch vụ xét nghiệm.
+4. **Xét nghiệm (`FrmXetNghiem`):** Cập nhật kết quả cho dịch vụ xét nghiệm vừa chỉ định (`DaCoKetQua`).
+5. **Lập toa thuốc (`FrmLapToa`):** Chọn 2 loại thuốc từ danh mục, nhập số lượng, liều dùng $\rightarrow$ Bấm **"Lưu Toa"**.
+6. **Thanh toán (`FrmThanhToan`):** Kiểm tra bảng kê (được miễn tiền khám định kỳ, tính tiền thuốc + XN) $\rightarrow$ Bấm **"Thanh toán"**.
+7. **Phát thuốc & Chốt hồ sơ (`FrmPhatThuoc` & `FrmHoanTat`):** Xác nhận phát thuốc $\rightarrow$ Bấm **"Hoàn tất đợt khám"** $\rightarrow$ Kiểm tra phiếu chuyển trạng thái `HoanTat` và khóa sửa.
