@@ -72,11 +72,10 @@ Giảng viên thực hiện các bước sau để cấu hình và kiểm tra d�
 git clone <URL_REPOSITORY_GIABAN>
 Hoặc giải nén file `.zip` bài làm đã nộp.
 
-### Bước 2: Khởi tạo Cơ sở dữ liệu SQL Server
-1. Mở **SQL Server Management Studio (SSMS)** hoặc **Visual Studio SQL Server Object Explorer**.
-2. Mở và thực thi file script SQL: `QuanLyHoSoBenhAn.sql` (nằm trong thư mục `Database/` hoặc thư mục gốc của project).
-3. Script sẽ tự động tạo Database `QuanLyHoSoBenhAn`, tạo toàn bộ 13 bảng cùng các ràng buộc PK, FK, CHECK, UNIQUE và chèn sẵn dữ liệu mẫu (Data Test).
+---
 
+### 2. Bước 3 (Sửa lỗi chưa đóng khối code xml)
+```markdown
 ### Bước 3: Cấu hình Chuỗi kết nối (Connection String)
 1. Mở file solution `QuanLyHoSoBenhAn.sln` bằng **Visual Studio 2022**.
 2. Mở file **`App.config`** và chỉnh sửa dòng `connectionString` nếu cần thiết:
@@ -87,15 +86,19 @@ Hoặc giải nén file `.zip` bài làm đã nộp.
          connectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QuanLyHoSoBenhAn;Integrated Security=True" 
          providerName="System.Data.SqlClient" />
 </connectionStrings>
+---
+
+### 3. Bước 4 & Bước 5 (Thay ký tự LaTeX `\rightarrow` thành mũi tên `→`)
+```markdown
 ### Bước 4: Biên dịch và Chạy phần mềm
-1. Chọn **Build** $\rightarrow$ **Rebuild Solution** (đảm bảo không có lỗi biên dịch).
+1. Chọn **Build** → **Rebuild Solution** (đảm bảo không có lỗi biên dịch).
 2. Nhấn **`F5`** (hoặc chọn nút **Start**) để chạy ứng dụng WinForms.
 
 ### Bước 5: Các kịch bản kiểm thử nhanh cho Giảng viên (Quick Test Flow)
-1. **Đăng ký mới (`FrmDangKy`):** Nhập thông tin bệnh nhân test + Đóng phí 200.000 VNĐ $\rightarrow$ Kiểm tra hệ thống cấp Mã Bệnh nhân & Mã Hồ sơ.
-2. **Đặt lịch hẹn (`FrmLichHen`):** Chọn bệnh nhân vừa tạo $\rightarrow$ Đặt lịch khám định kỳ cho Quý hiện tại.
-3. **Khám bệnh (`FrmKhamBenh`):** Mở phiếu khám $\rightarrow$ Nhập triệu chứng, chẩn đoán $\rightarrow$ Chỉ định 1 dịch vụ xét nghiệm.
+1. **Đăng ký mới (`FrmDangKy`):** Nhập thông tin bệnh nhân test + Đóng phí 200.000 VNĐ → Kiểm tra hệ thống cấp Mã Bệnh nhân & Mã Hồ sơ.
+2. **Đặt lịch hẹn (`FrmLichHen`):** Chọn bệnh nhân vừa tạo → Đặt lịch khám định kỳ cho Quý hiện tại.
+3. **Khám bệnh (`FrmKhamBenh`):** Mở phiếu khám → Nhập triệu chứng, chẩn đoán → Chỉ định 1 dịch vụ xét nghiệm.
 4. **Xét nghiệm (`FrmXetNghiem`):** Cập nhật kết quả cho dịch vụ xét nghiệm vừa chỉ định (`DaCoKetQua`).
-5. **Lập toa thuốc (`FrmLapToa`):** Chọn 2 loại thuốc từ danh mục, nhập số lượng, liều dùng $\rightarrow$ Bấm **"Lưu Toa"**.
-6. **Thanh toán (`FrmThanhToan`):** Kiểm tra bảng kê (được miễn tiền khám định kỳ, tính tiền thuốc + XN) $\rightarrow$ Bấm **"Thanh toán"**.
-7. **Phát thuốc & Chốt hồ sơ (`FrmPhatThuoc` & `FrmHoanTat`):** Xác nhận phát thuốc $\rightarrow$ Bấm **"Hoàn tất đợt khám"** $\rightarrow$ Kiểm tra phiếu chuyển trạng thái `HoanTat` và khóa sửa.
+5. **Lập toa thuốc (`FrmLapToa`):** Chọn 2 loại thuốc từ danh mục, nhập số lượng, liều dùng → Bấm **"Lưu Toa"**.
+6. **Thanh toán (`FrmThanhToan`):** Kiểm tra bảng kê (được miễn tiền khám định kỳ, tính tiền thuốc + XN) → Bấm **"Thanh toán"**.
+7. **Phát thuốc & Chốt hồ sơ (`FrmPhatThuoc` & `FrmHoanTat`):** Xác nhận phát thuốc → Bấm **"Hoàn tất đợt khám"** → Kiểm tra phiếu chuyển trạng thái `HoanTat` và khóa sửa.
