@@ -13,7 +13,7 @@ namespace QuanLyHoSoBenhAn.Forms
             InitializeComponent();
             txtMaHoSo.Text = maHoSo;
             txtMaLichHen.Text = "LH" + DateTime.Now.ToString("ddHHmmss");
-            dtpNgayHen.Value = DateTime.Now.AddDays(3); // Mặc định hẹn sau 3 ngày
+            dtpNgayHen.Value = DateTime.Now.AddDays(3);
         }
 
         private void btnDatLich_Click(object sender, EventArgs e)
@@ -26,7 +26,6 @@ namespace QuanLyHoSoBenhAn.Forms
 
             try
             {
-                // Gọi Stored Procedure dbo.sp_DatLichHen trong KhamService
                 khamService.DatLichHen(
                     txtMaLichHen.Text.Trim(),
                     txtMaHoSo.Text.Trim(),

@@ -66,6 +66,18 @@
     <Compile Include="Forms\FrmHoanTat.Designer.cs">
       <DependentUpon>FrmHoanTat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmHoSo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHoSo.Designer.cs">
+      <DependentUpon>FrmHoSo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmKhamBenh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmKhamBenh.Designer.cs">
+      <DependentUpon>FrmKhamBenh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmLapToa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,24 @@
     </Compile>
     <Compile Include="Forms\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPhatThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPhatThuoc.Designer.cs">
+      <DependentUpon>FrmPhatThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmThanhToan.Designer.cs">
+      <DependentUpon>FrmThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmXetNghiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmXetNghiem.Designer.cs">
+      <DependentUpon>FrmXetNghiem.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Models.cs" />
     <Compile Include="Program.cs" />

@@ -11,14 +11,12 @@ namespace QuanLyHoSoBenhAn.Forms
         public FrmDangKy()
         {
             InitializeComponent();
-
-            // Sửa tiền tố tự động sinh đúng chuẩn
             string suffix = DateTime.Now.ToString("ddHHmmss");
             txtMaBN.Text = "BN" + suffix;
-            txtMaHoSo.Text = "HS" + suffix; // Thêm HS vào mã hồ sơ
+            txtMaHoSo.Text = "HS" + suffix; 
             txtSoPhieuThu.Text = "PT" + suffix;
 
-            dtpNgaySinh.Value = new DateTime(1995, 1, 1); // Đặt mặc định ngày sinh hợp lý
+            dtpNgaySinh.Value = new DateTime(1995, 1, 1);
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)

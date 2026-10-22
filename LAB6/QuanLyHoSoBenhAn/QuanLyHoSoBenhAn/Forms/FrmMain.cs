@@ -10,43 +10,73 @@ namespace QuanLyHoSoBenhAn.Forms
             InitializeComponent();
         }
 
-        /// <summary>
-        /// Mở các Form con dưới dạng ShowDialog đúng theo quy chuẩn điều hướng của bài Lab
-        /// </summary>
-        private void MoForm(Form f)
-        {
-            using (f)
-            {
-                f.ShowDialog(this);
-            }
-        }
-
         private void btnTiepNhan_Click(object sender, EventArgs e)
         {
-            MoForm(new FrmDangKy());
+            FrmDangKy frm = new FrmDangKy();
+            frm.ShowDialog();
+        }
+
+
+        private void mnuHoSo_Click(object sender, EventArgs e)
+        {
+            FrmHoSo frm = new FrmHoSo();
+            frm.ShowDialog();
         }
 
         private void btnLichHen_Click(object sender, EventArgs e)
         {
-            MoForm(new FrmLichHen());
+            FrmLichHen frm = new FrmLichHen();
+            frm.ShowDialog();
+        }
+
+        private void mnuKhamBenh_Click(object sender, EventArgs e)
+        {
+            FrmKhamBenh frm = new FrmKhamBenh();
+            frm.ShowDialog();
+        }
+
+        private void mnuXetNghiem_Click(object sender, EventArgs e)
+        {
+            FrmXetNghiem frm = new FrmXetNghiem();
+            frm.ShowDialog();
         }
 
         private void btnKhamBenh_Click(object sender, EventArgs e)
         {
-            MoForm(new FrmLapToa());
+            FrmLapToa frm = new FrmLapToa();
+            frm.ShowDialog();
+        }
+
+        private void mnuThanhToan_Click(object sender, EventArgs e)
+        {
+            FrmThanhToan frm = new FrmThanhToan();
+            frm.ShowDialog();
+        }
+
+        private void mnuPhatThuoc_Click(object sender, EventArgs e)
+        {
+            FrmPhatThuoc frm = new FrmPhatThuoc();
+            frm.ShowDialog();
         }
 
         private void btnHoanTat_Click(object sender, EventArgs e)
         {
-            MoForm(new FrmHoanTat());
+            FrmHoanTat frm = new FrmHoanTat();
+            frm.ShowDialog();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có thực sự muốn thoát ứng dụng?", "Xác nhận",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn thoát khỏi ứng dụng không?",
+                "Xác nhận thoát",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
             {
-                this.Close();
+                Application.Exit();
             }
         }
     }

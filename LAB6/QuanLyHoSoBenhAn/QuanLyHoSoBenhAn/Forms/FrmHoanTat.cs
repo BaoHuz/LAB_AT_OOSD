@@ -27,7 +27,6 @@ namespace QuanLyHoSoBenhAn.Forms
                 MessageBox.Show("Không thể hoàn tất: " + ex.Message, "Lỗi Điều Kiện", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -12,7 +12,6 @@ namespace QuanLyHoSoBenhAn.Forms
         private DataTable dtDongThuoc;
         private ToaThuocService toaThuocService = new ToaThuocService();
 
-        // Constructor nhận mã phiếu khám truyền vào
         public FrmLapToa(string maPhieuKham = "PK01", string maBS = "BS01", string chanDoan = "Viêm phế quản cấp")
         {
             InitializeComponent();
@@ -27,23 +26,17 @@ namespace QuanLyHoSoBenhAn.Forms
             KhoiTaoDataTableSchema();
             NapDanhSachThuocVaoComboBox();
         }
-
-        /// <summary>
-        /// Tạo Schema khớp 100% với User-Defined Table Type: dbo.DongToaThuoc
-        /// (MaThuoc: string, SoLuong: int, LieuDung: string, CachDung: string)
-        /// </summary>
         private void KhoiTaoDataTableSchema()
         {
             dtDongThuoc = new DataTable();
             dtDongThuoc.Columns.Add("MaThuoc", typeof(string));
-            dtDongThuoc.Columns.Add("TenThuoc", typeof(string)); // Cột hỗ trợ hiển thị trên Grid
+            dtDongThuoc.Columns.Add("TenThuoc", typeof(string));
             dtDongThuoc.Columns.Add("SoLuong", typeof(int));
             dtDongThuoc.Columns.Add("LieuDung", typeof(string));
             dtDongThuoc.Columns.Add("CachDung", typeof(string));
 
             dgvChiTietToa.DataSource = dtDongThuoc;
 
-            // Đổi tên tiêu đề cột DataGridView
             if (dgvChiTietToa.Columns["MaThuoc"] != null) dgvChiTietToa.Columns["MaThuoc"].HeaderText = "Mã Thuốc";
             if (dgvChiTietToa.Columns["TenThuoc"] != null) dgvChiTietToa.Columns["TenThuoc"].HeaderText = "Tên Thuốc";
             if (dgvChiTietToa.Columns["SoLuong"] != null) dgvChiTietToa.Columns["SoLuong"].HeaderText = "Số Lượng";
@@ -51,9 +44,6 @@ namespace QuanLyHoSoBenhAn.Forms
             if (dgvChiTietToa.Columns["CachDung"] != null) dgvChiTietToa.Columns["CachDung"].HeaderText = "Cách Dùng";
         }
 
-        /// <summary>
-        /// Tải danh mục thuốc đang sử dụng từ CSDL lên ComboBox
-        /// </summary>
         private void NapDanhSachThuocVaoComboBox()
         {
             try
@@ -96,7 +86,6 @@ namespace QuanLyHoSoBenhAn.Forms
                 return;
             }
 
-            // Kiểm tra trùng thuốc trong toa
             foreach (DataRow row in dtDongThuoc.Rows)
             {
                 if (row["MaThuoc"].ToString() == maThuoc)
@@ -106,10 +95,8 @@ namespace QuanLyHoSoBenhAn.Forms
                 }
             }
 
-            // Thêm vào DataTable
             dtDongThuoc.Rows.Add(maThuoc, tenThuoc, soLuong, lieuDung, cachDung);
 
-            // Reset ô nhập liệu
             txtLieuDung.Clear();
             txtCachDung.Clear();
             numSoLuong.Value = 10;
@@ -141,7 +128,6 @@ namespace QuanLyHoSoBenhAn.Forms
             {
                 btnLuuToa.Enabled = false;
 
-                // Chuẩn bị DataTable đúng chuẩn TVP (bỏ cột TenThuoc dư)
                 DataTable dtTVP = new DataTable();
                 dtTVP.Columns.Add("MaThuoc", typeof(string));
                 dtTVP.Columns.Add("SoLuong", typeof(int));
@@ -153,7 +139,6 @@ namespace QuanLyHoSoBenhAn.Forms
                     dtTVP.Rows.Add(dr["MaThuoc"], dr["SoLuong"], dr["LieuDung"], dr["CachDung"]);
                 }
 
-                // Gọi Service thực thi Stored Procedure sp_LapToaThuoc trong Transaction
                 toaThuocService.LapToaThuoc(
                     txtMaToa.Text.Trim(),
                     txtMaPhieuKham.Text.Trim(),
