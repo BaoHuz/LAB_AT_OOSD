@@ -7,9 +7,7 @@
 | Họ và tên | Nguyễn Hữu Bảo |
 | MSSV | 1250080016 |
 | Lớp | 12_ĐH_CNPM1 |
-| Học phần | Thực hành Phân tích thiết kế hướng đối tượng |
 | Tên bài Lab | Bài 7 – Quản lý nhân sự |
-| Đơn vị trong đề bài | Công ty sơn Đông Á |
 
 
 ## 2. Các tệp trong bài nộp
