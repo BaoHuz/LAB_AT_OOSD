@@ -1,4 +1,4 @@
-
+﻿
 IF DB_ID(N'QuanLyChoThueVanPhong') IS NULL CREATE DATABASE QuanLyChoThueVanPhong;
 GO
 USE QuanLyChoThueVanPhong;
@@ -34,6 +34,7 @@ CREATE TABLE Tang(
     SoThuTu int NOT NULL UNIQUE CHECK(SoThuTu > 0),
     GhiChu nvarchar(300) NULL
 );
+GO
 
 CREATE TABLE VanPhong(
     MaVP varchar(20) NOT NULL PRIMARY KEY,
@@ -47,6 +48,7 @@ CREATE TABLE VanPhong(
     CONSTRAINT FK_VanPhong_Tang FOREIGN KEY(MaTang) REFERENCES Tang(MaTang),
     CONSTRAINT CK_VanPhong_TrangThai CHECK(TrangThai IN (N'Trống',N'Đang thuê',N'Bảo trì'))
 );
+GO
 
 CREATE TABLE KhachHang(
     MaKH varchar(20) NOT NULL PRIMARY KEY,
@@ -59,6 +61,7 @@ CREATE TABLE KhachHang(
     CONSTRAINT UQ_KhachHang_MST UNIQUE(MaSoThue),
     CONSTRAINT CK_KhachHang_Loai CHECK(LoaiKhach IN (N'Cá nhân',N'Doanh nghiệp'))
 );
+GO
 
 CREATE TABLE HopDongThue(
     MaHD varchar(20) NOT NULL PRIMARY KEY,
@@ -73,6 +76,7 @@ CREATE TABLE HopDongThue(
     CONSTRAINT CK_HopDong_Ngay CHECK(NgayKetThuc >= NgayBatDau),
     CONSTRAINT CK_HopDong_TrangThai CHECK(TrangThai IN (N'Hiệu lực',N'Hết hạn',N'Đã hủy'))
 );
+GO
 
 CREATE TABLE ChiTietHopDong(
     MaHD varchar(20) NOT NULL,
@@ -87,22 +91,25 @@ CREATE TABLE ChiTietHopDong(
     CONSTRAINT CK_CTHD_Ngay CHECK(NgayKetThuc >= NgayBatDau),
     CONSTRAINT CK_CTHD_TrangThai CHECK(TrangThai IN (N'Đang thuê',N'Kết thúc'))
 );
+GO
 
 CREATE TABLE ThanhToanTienThue(
     SoTT varchar(20) NOT NULL PRIMARY KEY,
     MaHD varchar(20) NOT NULL,
     KyTuThang int NOT NULL CHECK(KyTuThang >= 1),
-    KyDenThang int NOT NULL CHECK(KyDenThang >= KyTuThang),
+    KyDenThang int NOT NULL,
     NgayDenHan date NOT NULL,
     NgayThanhToan date NULL,
     SoTien decimal(18,2) NOT NULL CHECK(SoTien > 0),
     TrangThai nvarchar(30) NOT NULL DEFAULT N'Chưa thanh toán',
     GhiChu nvarchar(300) NULL,
     CONSTRAINT UQ_TTT_Ky UNIQUE(MaHD, KyTuThang, KyDenThang),
+    CONSTRAINT CK_TTT_Ky CHECK(KyDenThang >= KyTuThang),
     CONSTRAINT FK_TTT_HD FOREIGN KEY(MaHD) REFERENCES HopDongThue(MaHD),
     CONSTRAINT CK_TTT_TrangThai CHECK(TrangThai IN (N'Chưa thanh toán',N'Đã thanh toán')),
     CONSTRAINT CK_TTT_Ngay CHECK(NgayThanhToan IS NULL OR NgayThanhToan >= DATEADD(day,-30,NgayDenHan))
 );
+GO
 
 CREATE TABLE DichVu(
     MaDV varchar(20) NOT NULL PRIMARY KEY,
@@ -111,6 +118,7 @@ CREATE TABLE DichVu(
     DonGia decimal(18,2) NOT NULL CHECK(DonGia >= 0),
     DangSuDung bit NOT NULL DEFAULT 1
 );
+GO
 
 CREATE TABLE SuDungDichVu(
     MaSD varchar(20) NOT NULL PRIMARY KEY,
@@ -126,6 +134,7 @@ CREATE TABLE SuDungDichVu(
     CONSTRAINT FK_SDDV_DV FOREIGN KEY(MaDV) REFERENCES DichVu(MaDV),
     CONSTRAINT CK_SDDV_Thang CHECK(DAY(ThangSuDung)=1)
 );
+GO
 
 CREATE TABLE HoaDonDichVu(
     MaHDDV varchar(20) NOT NULL PRIMARY KEY,
@@ -139,6 +148,7 @@ CREATE TABLE HoaDonDichVu(
     CONSTRAINT CK_HDDV_Thang CHECK(DAY(ThangSuDung)=1),
     CONSTRAINT CK_HDDV_TrangThai CHECK(TrangThai IN (N'Chưa thanh toán',N'Đã thanh toán'))
 );
+GO
 
 CREATE TABLE ChiTietHoaDonDichVu(
     MaHDDV varchar(20) NOT NULL,
@@ -148,6 +158,7 @@ CREATE TABLE ChiTietHoaDonDichVu(
     CONSTRAINT FK_CTHDDV_HD FOREIGN KEY(MaHDDV) REFERENCES HoaDonDichVu(MaHDDV),
     CONSTRAINT FK_CTHDDV_SD FOREIGN KEY(MaSD) REFERENCES SuDungDichVu(MaSD)
 );
+GO
 
 CREATE TABLE ThanhToanDichVu(
     SoTTDV varchar(20) NOT NULL PRIMARY KEY,
@@ -157,6 +168,7 @@ CREATE TABLE ThanhToanDichVu(
     GhiChu nvarchar(300) NULL,
     CONSTRAINT FK_TTDV_HDDV FOREIGN KEY(MaHDDV) REFERENCES HoaDonDichVu(MaHDDV)
 );
+GO
 
 CREATE TABLE PhieuGiaHan(
     MaGH varchar(20) NOT NULL PRIMARY KEY,
@@ -171,6 +183,7 @@ CREATE TABLE PhieuGiaHan(
     CONSTRAINT FK_GH_CTHD FOREIGN KEY(MaHD,MaVP) REFERENCES ChiTietHopDong(MaHD,MaVP),
     CONSTRAINT CK_GH_Ngay CHECK(DenNgay >= TuNgay)
 );
+GO
 
 CREATE TABLE NhanVienVanPhong(
     MaNV varchar(20) NOT NULL PRIMARY KEY,
@@ -184,6 +197,7 @@ CREATE TABLE NhanVienVanPhong(
     CONSTRAINT FK_NVVP_KH FOREIGN KEY(MaKH) REFERENCES KhachHang(MaKH),
     CONSTRAINT FK_NVVP_VP FOREIGN KEY(MaVP) REFERENCES VanPhong(MaVP)
 );
+GO
 
 CREATE TABLE TheGiuXe(
     MaThe varchar(20) NOT NULL PRIMARY KEY,
@@ -196,6 +210,7 @@ CREATE TABLE TheGiuXe(
     CONSTRAINT FK_The_NhanVien FOREIGN KEY(MaNV) REFERENCES NhanVienVanPhong(MaNV),
     CONSTRAINT CK_The_TrangThai CHECK(TrangThai IN (N'Hoạt động',N'Khóa',N'Đã thu hồi'))
 );
+GO
 
 CREATE TABLE KiemTraPhong(
     MaKT varchar(20) NOT NULL PRIMARY KEY,

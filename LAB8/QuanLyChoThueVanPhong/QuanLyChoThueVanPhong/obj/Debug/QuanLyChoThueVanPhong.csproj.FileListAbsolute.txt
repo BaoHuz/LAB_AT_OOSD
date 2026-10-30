@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\bin\Debug\QuanLyChoThueVanPhong.exe.config
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\bin\Debug\QuanLyChoThueVanPhong.exe
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\bin\Debug\QuanLyChoThueVanPhong.pdb
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.Properties.Resources.resources
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.exe
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.pdb
+C:\Users\Admin\source\repos\QuanLyThuVien\LAB8\QuanLyChoThueVanPhong\QuanLyChoThueVanPhong\obj\Debug\QuanLyChoThueVanPhong.exe.config
