@@ -65,7 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
 
-            // grpDoan
+
             this.grpDoan.Text = "Thông tin đoàn khách";
             this.grpDoan.Location = new System.Drawing.Point(12, 12); this.grpDoan.Size = new System.Drawing.Size(460, 180);
             this.txtMaDoan.Location = new System.Drawing.Point(90, 20); this.txtMaDoan.Size = new System.Drawing.Size(120, 23);
@@ -81,7 +81,7 @@
                 new System.Windows.Forms.Label { Text = "Đại diện:", Location = new System.Drawing.Point(10, 143) }, this.txtDaiDien
             });
 
-            // grpDangKy
+
             this.grpDangKy.Text = "Đăng ký tour";
             this.grpDangKy.Location = new System.Drawing.Point(480, 12); this.grpDangKy.Size = new System.Drawing.Size(490, 180);
             this.txtSo.Location = new System.Drawing.Point(80, 20); this.txtSo.Size = new System.Drawing.Size(120, 23);
@@ -113,19 +113,19 @@
                 new System.Windows.Forms.Label { Text = "Tổng tiền:", Location = new System.Drawing.Point(210, 145) }, this.lblTong
             });
 
-            // dgvThanhVien
+
             this.dgvThanhVien.Location = new System.Drawing.Point(12, 200);
             this.dgvThanhVien.Size = new System.Drawing.Size(958, 140);
             this.dgvThanhVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 
-            // Buttons
+
             this.btnDangKy.Location = new System.Drawing.Point(320, 350); this.btnDangKy.Size = new System.Drawing.Size(150, 35); this.btnDangKy.Text = "Lập phiếu đăng ký";
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
 
             this.btnHuy.Location = new System.Drawing.Point(500, 350); this.btnHuy.Size = new System.Drawing.Size(150, 35); this.btnHuy.Text = "Hủy phiếu (mất cọc)";
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
 
-            // dgv
+
             this.dgv.Location = new System.Drawing.Point(12, 395);
             this.dgv.Size = new System.Drawing.Size(958, 200);
             this.dgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;

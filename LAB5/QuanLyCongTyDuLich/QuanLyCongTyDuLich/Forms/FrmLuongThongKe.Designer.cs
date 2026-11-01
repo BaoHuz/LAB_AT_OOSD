@@ -7,13 +7,13 @@
         private System.Windows.Forms.TabPage tabLuong;
         private System.Windows.Forms.TabPage tabTongHop;
 
-        // Luong controls
+
         private System.Windows.Forms.NumericUpDown numThang;
         private System.Windows.Forms.NumericUpDown numNam;
         private System.Windows.Forms.Button btnLuong;
         private System.Windows.Forms.DataGridView dgvLuong;
 
-        // TongHop controls
+
         private System.Windows.Forms.DateTimePicker dtTu;
         private System.Windows.Forms.DateTimePicker dtDen;
         private System.Windows.Forms.Button btnTongHop;
@@ -55,13 +55,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvTongHop)).BeginInit();
             this.SuspendLayout();
 
-            // TabControl
+
             this.tabTK.Controls.Add(this.tabLuong);
             this.tabTK.Controls.Add(this.tabTongHop);
             this.tabTK.Location = new System.Drawing.Point(12, 12);
             this.tabTK.Size = new System.Drawing.Size(860, 450);
 
-            // Tab Luong
+
             this.tabLuong.Text = "Lương hướng dẫn viên";
             this.numThang.Location = new System.Drawing.Point(60, 15); this.numThang.Size = new System.Drawing.Size(50, 23); this.numThang.Minimum = 1; this.numThang.Maximum = 12;
             this.numNam.Location = new System.Drawing.Point(160, 15); this.numNam.Size = new System.Drawing.Size(80, 23); this.numNam.Minimum = 2000; this.numNam.Maximum = 2100;
@@ -79,7 +79,7 @@
                 this.btnLuong, this.dgvLuong
             });
 
-            // Tab TongHop
+
             this.tabTongHop.Text = "Thống kê tổng hợp";
             this.dtTu.Location = new System.Drawing.Point(70, 15); this.dtTu.Size = new System.Drawing.Size(120, 23); this.dtTu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtDen.Location = new System.Drawing.Point(250, 15); this.dtDen.Size = new System.Drawing.Size(120, 23); this.dtDen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -97,7 +97,7 @@
                 this.btnTongHop, this.dgvTongHop
             });
 
-            // Form
+
             this.btnDong.Location = new System.Drawing.Point(760, 470); this.btnDong.Size = new System.Drawing.Size(110, 30); this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
 

@@ -8,7 +8,6 @@ namespace QuanLyNhanSuDongA
         [STAThread]
         static void Main()
         {
-            // Tắt tự động phóng to lỗi Font của Windows
             if (Environment.OSVersion.Version.Major >= 6)
             {
                 SetProcessDPIAware();

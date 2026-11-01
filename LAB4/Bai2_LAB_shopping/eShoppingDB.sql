@@ -1,11 +1,9 @@
-﻿-- Create Database
-CREATE DATABASE eShoppingDB;
+﻿CREATE DATABASE eShoppingDB;
 GO
 
 USE eShoppingDB;
 GO
 
--- 1. Table KhachHang
 CREATE TABLE KhachHang (
     MaKH VARCHAR(20) PRIMARY KEY,
     HoTen NVARCHAR(100) NOT NULL,
@@ -18,13 +16,11 @@ CREATE TABLE KhachHang (
     Email VARCHAR(100) NULL
 );
 
--- 2. Table NhomSanPham
 CREATE TABLE NhomSanPham (
     MaNhom VARCHAR(20) PRIMARY KEY,
     TenNhom NVARCHAR(100) NOT NULL
 );
 
--- 3. Table SanPham
 CREATE TABLE SanPham (
     MaSP VARCHAR(20) PRIMARY KEY,
     MaNhom VARCHAR(20) NOT NULL,
@@ -37,7 +33,6 @@ CREATE TABLE SanPham (
     CONSTRAINT FK_SanPham_NhomSanPham FOREIGN KEY (MaNhom) REFERENCES NhomSanPham(MaNhom)
 );
 
--- 4. Table DonHang
 CREATE TABLE DonHang (
     MaDH VARCHAR(20) PRIMARY KEY,
     MaKH VARCHAR(20) NOT NULL,
@@ -54,7 +49,6 @@ CREATE TABLE DonHang (
     CONSTRAINT FK_DonHang_KhachHang FOREIGN KEY (MaKH) REFERENCES KhachHang(MaKH)
 );
 
--- 5. Table ChiTietDonHang
 CREATE TABLE ChiTietDonHang (
     MaDH VARCHAR(20) NOT NULL,
     MaSP VARCHAR(20) NOT NULL,

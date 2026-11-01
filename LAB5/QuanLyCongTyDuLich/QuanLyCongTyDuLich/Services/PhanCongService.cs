@@ -61,7 +61,6 @@ namespace QuanLyCongTyDuLich.Services
                 ngayVe = Convert.ToDateTime(dt.Rows[0]["NgayKetThucDuKien"]);
             }
 
-            // Kiểm tra trùng lịch của HDV
             object trung = Db.Scalar(@"
                 SELECT COUNT(*) FROM PhanCongHDV p
                 LEFT JOIN ChuyenLe c ON p.MaChuyen = c.MaChuyen

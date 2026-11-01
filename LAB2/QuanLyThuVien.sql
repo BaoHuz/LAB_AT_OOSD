@@ -52,7 +52,7 @@ CREATE TABLE dbo.DocGia (
  Email NVARCHAR(150) NOT NULL,
  Anh3x4 NVARCHAR(260) NULL
 );
--- MaThe là khóa kỹ thuật bổ sung để lưu lịch sử cấp/gia hạn thẻ.
+
 CREATE TABLE dbo.TheDocGia (
  MaThe NVARCHAR(30) NOT NULL PRIMARY KEY,
  MaDocGia NVARCHAR(20) NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE dbo.PhieuMuon (
  CONSTRAINT FK_PhieuMuon_DocGia FOREIGN KEY (MaDocGia) REFERENCES dbo.DocGia(MaDocGia),
  CONSTRAINT FK_PhieuMuon_NhanVien FOREIGN KEY (MaNhanVien) REFERENCES dbo.NhanVien(MaNhanVien)
 );
--- Mỗi dòng tương ứng một đầu sách; UNIQUE bảo đảm không có hai sách cùng đầu sách trong một phiếu.
+
 CREATE TABLE dbo.ChiTietPhieuMuon (
  MaChiTiet NVARCHAR(35) NOT NULL PRIMARY KEY,
  MaPhieuMuon NVARCHAR(30) NOT NULL,
@@ -121,4 +121,4 @@ INSERT INTO dbo.DocGia(MaDocGia,Ho,Ten,NgaySinh,Phai,SoDienThoai,DiaChi,Email,An
 INSERT INTO dbo.TheDocGia(MaThe,MaDocGia,NgayCap,HanSuDung,DaDongLePhi,TrangThai) VALUES
 (N'THE_DG001_2026',N'DG001','2026-01-01','2026-12-31',1,1),
 (N'THE_DG002_2026',N'DG002','2026-01-01','2026-12-31',1,1);
-GO
+GO

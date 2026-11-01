@@ -7,7 +7,6 @@
         private System.Windows.Forms.TabPage tabTT;
         private System.Windows.Forms.TabPage tabKS;
 
-        // Thanh toan controls
         private System.Windows.Forms.DataGridView dgvDoan;
         private System.Windows.Forms.TextBox txtSoTT;
         private System.Windows.Forms.TextBox txtSoDK;
@@ -16,7 +15,6 @@
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.Button btnThanhToan;
 
-        // Khao sat controls
         private System.Windows.Forms.ComboBox cboLoaiKS;
         private System.Windows.Forms.ComboBox cboDangKy;
         private System.Windows.Forms.TextBox txtMaKS;
@@ -74,13 +72,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numDiem)).BeginInit();
             this.SuspendLayout();
 
-            // TabControl
+
             this.tabKT.Controls.Add(this.tabTT);
             this.tabKT.Controls.Add(this.tabKS);
             this.tabKT.Location = new System.Drawing.Point(12, 12);
             this.tabKT.Size = new System.Drawing.Size(960, 500);
 
-            // Tab TT
+
             this.tabTT.Text = "Thanh toán sau tour (đoàn)";
             this.dgvDoan.Location = new System.Drawing.Point(10, 10);
             this.dgvDoan.Size = new System.Drawing.Size(930, 330);
@@ -105,7 +103,7 @@
                 new System.Windows.Forms.Label { Text = "Ghi chú:", Location = new System.Drawing.Point(240, 398) }, this.txtGhiChu, this.btnThanhToan
             });
 
-            // Tab KS
+
             this.tabKS.Text = "Khảo sát khách hàng";
             this.cboLoaiKS.Location = new System.Drawing.Point(80, 15); this.cboLoaiKS.Size = new System.Drawing.Size(80, 23); this.cboLoaiKS.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLoaiKS.SelectedIndexChanged += new System.EventHandler(this.cboLoaiKS_SelectedIndexChanged);
@@ -142,7 +140,7 @@
                 new System.Windows.Forms.Label { Text = "Góp ý:", Location = new System.Drawing.Point(10, 383) }, this.txtGopY, this.btnGhiPH
             });
 
-            // Form
+
             this.btnDong.Location = new System.Drawing.Point(860, 520); this.btnDong.Size = new System.Drawing.Size(110, 30); this.btnDong.Text = "Đóng";
             this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
 

@@ -1,12 +1,224 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\QuanLyThuVien\\LAB8\\QuanLyChoThueVanPhong\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmthegiuxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmthegiuxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmthanhtoantienthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmthanhtoantienthue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmtangvanphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmtangvanphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmkiemtraphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmkiemtraphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmhoadondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmhoadondichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmgiahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmgiahan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab8\\quanlychothuevanphong\\quanlychothuevanphong\\forms\\frmdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C56F5DB5-EC12-44E9-A521-8E074DD26415}|QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong.csproj|solutionrelative:quanlychothuevanphong\\forms\\frmdichvu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmTheGiuXe.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmTheGiuXe.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmTheGiuXe.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmTheGiuXe.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmTheGiuXe.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:13:03.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmThanhToanTienThue.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmThanhToanTienThue.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmThanhToanTienThue.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmThanhToanTienThue.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmThanhToanTienThue.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:12:46.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmTangVanPhong.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmTangVanPhong.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmTangVanPhong.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmTangVanPhong.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmTangVanPhong.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:12:27.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmNhanVien.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmNhanVien.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmNhanVien.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmNhanVien.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:12:09.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmMain.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmMain.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmMain.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmMain.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:11:54.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmKiemTraPhong.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmKiemTraPhong.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmKiemTraPhong.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmKiemTraPhong.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmKiemTraPhong.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:11:37.065Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmKhachHang.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmKhachHang.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmKhachHang.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmKhachHang.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:11:20.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmHopDong.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmHopDong.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmHopDong.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmHopDong.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmHopDong.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:11:03.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmHoaDonDichVu.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmHoaDonDichVu.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmHoaDonDichVu.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmHoaDonDichVu.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmHoaDonDichVu.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:10:43.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmGiaHan.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmGiaHan.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmGiaHan.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmGiaHan.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmGiaHan.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:10:30.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmDichVu.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmDichVu.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Forms\\FrmDichVu.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Forms\\FrmDichVu.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Forms\\FrmDichVu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:04:59.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyChoThueVanPhong\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB8\\QuanLyChoThueVanPhong\\QuanLyChoThueVanPhong\\Program.cs",
+              "RelativeToolTip": "QuanLyChoThueVanPhong\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:04:46.208Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

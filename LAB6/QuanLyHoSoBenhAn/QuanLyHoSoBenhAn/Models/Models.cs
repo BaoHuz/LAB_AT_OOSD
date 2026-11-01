@@ -2,7 +2,6 @@
 
 namespace QuanLyHoSoBenhAn.Models
 {
-    // DTO Bệnh nhân
     public class BenhNhanDTO
     {
         public string MaBN { get; set; }
@@ -13,7 +12,6 @@ namespace QuanLyHoSoBenhAn.Models
         public string Anh3x4 { get; set; }
     }
 
-    // DTO Phiếu khám
     public class PhieuKhamDTO
     {
         public string MaPhieuKham { get; set; }

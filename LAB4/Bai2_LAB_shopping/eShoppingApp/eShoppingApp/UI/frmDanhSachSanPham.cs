@@ -110,7 +110,7 @@ namespace eShoppingApp.UI
                 return;
             }
 
-            // Chuyển sang Form Thanh toán (nếu chưa có FormThanhToan, bạn thêm lớp này vào UI)
+
             frmThanhToan frmThanhToan = new frmThanhToan(cart);
             frmThanhToan.ShowDialog();
         }

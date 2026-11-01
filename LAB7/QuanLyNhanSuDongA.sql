@@ -2,7 +2,7 @@
     EXEC(N'CREATE DATABASE [QuanLyNhanSuDongA]');
 GO
 
-USE [QuanLyNhanSuDongA];
+USE QuanLyNhanSuDongA;
 GO
 
 SET NOCOUNT ON;

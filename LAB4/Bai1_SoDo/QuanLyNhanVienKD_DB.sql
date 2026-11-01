@@ -3,7 +3,6 @@ GO
 USE QuanLyNhanVienKD_DB;
 GO
 
--- 1. BẢNG NHÂN VIÊN
 CREATE TABLE NhanVien (
     MaNV VARCHAR(20) NOT NULL PRIMARY KEY,
     TenNV NVARCHAR(120) NOT NULL,
@@ -11,7 +10,6 @@ CREATE TABLE NhanVien (
     LoaiNV NVARCHAR(30) NOT NULL DEFAULT N'Thường' CHECK (LoaiNV IN (N'Thường', N'Kinh doanh'))
 );
 
--- 2. BẢNG QUÁ TRÌNH TĂNG LƯƠNG
 CREATE TABLE QuaTrinhTangLuong (
     IDTangLuong INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     MaNV VARCHAR(20) NOT NULL,
@@ -21,23 +19,23 @@ CREATE TABLE QuaTrinhTangLuong (
     CONSTRAINT UQ_NV_NgayHieuLuc UNIQUE (MaNV, NgayHieuLuc)
 );
 
--- 3. BẢNG NHÂN VIÊN KINH DOANH
+
 CREATE TABLE NhanVienKinhDoanh (
     MaNV VARCHAR(20) NOT NULL PRIMARY KEY,
     CapDoKD NVARCHAR(30) NOT NULL CHECK (CapDoKD IN (N'Lâu năm', N'Tập sự')),
-    MaNVHuongDan VARCHAR(20) NULL, -- Khóa ngoại tự tham chiếu
+    MaNVHuongDan VARCHAR(20) NULL, 
     CONSTRAINT FK_NVKD_NhanVien FOREIGN KEY (MaNV) REFERENCES NhanVien(MaNV) ON DELETE CASCADE,
     CONSTRAINT FK_NVKD_HuongDan FOREIGN KEY (MaNVHuongDan) REFERENCES NhanVienKinhDoanh(MaNV)
 );
 
--- 4. BẢNG ĐƠN HÀNG
+
 CREATE TABLE DonHang (
     SoDOH VARCHAR(30) NOT NULL PRIMARY KEY,
     KhachHang NVARCHAR(150) NOT NULL,
     TriGia DECIMAL(18,2) NOT NULL DEFAULT 0 CHECK (TriGia >= 0)
 );
 
--- 5. BẢNG THƯƠNG LƯỢNG (Lớp liên kết N-N)
+
 CREATE TABLE ThuongLuong (
     MaNV VARCHAR(20) NOT NULL,
     SoDOH VARCHAR(30) NOT NULL,

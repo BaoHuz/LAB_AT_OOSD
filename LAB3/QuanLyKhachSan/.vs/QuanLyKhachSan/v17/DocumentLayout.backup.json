@@ -1,12 +1,36 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\QuanLyThuVien\\LAB3\\QuanLyKhachSan\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB3\\QuanLyKhachSan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BB0BD7-6E6E-41BA-BB48-DB513DA6C719}|QuanLyKhachSan\\QuanLyKhachSan.csproj|c:\\users\\admin\\downloads\\ppptpmh\u0111t\\tong_hop_bao_cao\\lab_at_oosd\\lab3\\quanlykhachsan\\quanlykhachsan\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A7BB0BD7-6E6E-41BA-BB48-DB513DA6C719}|QuanLyKhachSan\\QuanLyKhachSan.csproj|solutionrelative:quanlykhachsan\\forms\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB3\\QuanLyKhachSan\\QuanLyKhachSan\\Forms\\FrmMain.cs",
+              "RelativeDocumentMoniker": "QuanLyKhachSan\\Forms\\FrmMain.cs",
+              "ToolTip": "C:\\Users\\Admin\\Downloads\\PPPTPMH\u0110T\\Tong_hop_bao_cao\\LAB_AT_OOSD\\LAB3\\QuanLyKhachSan\\QuanLyKhachSan\\Forms\\FrmMain.cs [Design]",
+              "RelativeToolTip": "QuanLyKhachSan\\Forms\\FrmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T02:14:11.444Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

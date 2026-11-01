@@ -204,7 +204,6 @@ CREATE TABLE ThanhToan(
 );
 GO
 
--- TẠO INDEX
 CREATE INDEX IX_PhieuDatPhong_Ngay ON PhieuDatPhong(NgayNhan,NgayTraDuKien,TrangThai);
 CREATE INDEX IX_CTDat_Phong ON ChiTietDatPhong(SoPhong,SoPhieuDat);
 CREATE INDEX IX_PhieuSDDV_DatPhong ON PhieuSuDungDV(SoPhieuDat,SoPhong,NgaySuDung);

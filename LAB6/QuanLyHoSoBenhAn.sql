@@ -267,29 +267,24 @@ BEGIN
 END;
 GO
 
-
--- 1. THÊM DANH MỤC BÁC SĨ (BacSi)
 INSERT INTO BacSi (MaBS, HoTen, ChuyenKhoa, DienThoai) VALUES
 ('BS01', N'Trần Văn An', N'Nội tổng quát', '0901234567'),
 ('BS02', N'Lê Thị Bình', N'Tim mạch', '0912345678'),
 ('BS03', N'Phạm Minh Cường', N'Tai Mũi Họng', '0923456789'),
 ('BS04', N'Nguyễn Thanh Dũng', N'Nhi khoa', '0934567890');
 
--- 2. THÊM DANH MỤC KHOA ĐIỀU TRỊ (KhoaDieuTri)
 INSERT INTO KhoaDieuTri (MaKhoa, TenKhoa, PhongKham) VALUES
 ('K01', N'Khoa Nội Tổng Hợp', N'Phòng 101 - Lầu 1'),
 ('K02', N'Khoa Tim Mạch', N'Phòng 202 - Lầu 2'),
 ('K03', N'Khoa Tai Mũi Họng', N'Phòng 105 - Lầu 1'),
 ('K04', N'Khoa Khám Bệnh Định Kỳ', N'Phòng 301 - Lầu 3');
 
--- 3. THÊM DANH MỤC XÉT NGHIỆM (XetNghiem)
 INSERT INTO XetNghiem (MaXetNghiem, TenXetNghiem, DonGia) VALUES
 ('XN01', N'Xét nghiệm Công thức máu toàn phần (CBC)', 120000.00),
 ('XN02', N'Xét nghiệm Đường huyết lúc đói (Glucose)', 80000.00),
 ('XN03', N'Chụp X-quang Phổi thẳng', 150000.00),
 ('XN04', N'Siêu âm Tim màu', 350000.00);
 
--- 4. THÊM DANH MỤC THUỐC (Thuoc)
 INSERT INTO Thuoc (MaThuoc, TenThuoc, DonViTinh, DonGia, DangSuDung) VALUES
 ('T01', N'Paracetamol 500mg', N'Viên', 1500.00, 1),
 ('T02', N'Amoxicillin 500mg', N'Viên', 3000.00, 1),
@@ -298,8 +293,7 @@ INSERT INTO Thuoc (MaThuoc, TenThuoc, DonViTinh, DonGia, DangSuDung) VALUES
 ('T05', N'Vitamin C 500mg', N'Viên', 1000.00, 1);
 GO
 
--- 5. ĐĂNG KÝ BỆNH NHÂN MỚI & THU LỆ PHÍ NĂM QUA STORED PROCEDURE (sp_DangKyMoi)
--- Đăng ký Bệnh nhân 1
+
 EXEC dbo.sp_DangKyMoi 
     @MaBN = 'BN01', 
     @MaHoSo = 'HS01', 
@@ -311,7 +305,7 @@ EXEC dbo.sp_DangKyMoi
     @Anh = N'/images/patients/BN01.jpg', 
     @SoTien = 200000.00;
 
--- Đăng ký Bệnh nhân 2
+
 EXEC dbo.sp_DangKyMoi 
     @MaBN = 'BN02', 
     @MaHoSo = 'HS02', 
@@ -324,16 +318,14 @@ EXEC dbo.sp_DangKyMoi
     @SoTien = 200000.00;
 GO
 
--- 6. ĐẶT LỊCH HẸN KHÁM ĐỊNH KỲ THEO QUÝ QUA STORED PROCEDURE (sp_DatLichHen)
--- Đặt lịch hẹn khám định kỳ Quý 4/2026 cho HS01
+
 EXEC dbo.sp_DatLichHen 
     @MaLichHen = 'LH01', 
     @MaHoSo = 'HS01', 
     @NgayHen = '2026-10-25 08:30:00';
 GO
 
--- 7. THÊM PHIẾU KHÁM BỆNH (PhieuKhamBenh)
--- Phiếu 1: Khám thường cho HS01
+
 INSERT INTO PhieuKhamBenh (
     MaPhieuKham, MaHoSo, MaBS, MaKhoa, MaLichHen, NgayGioKham, 
     TrieuChung, ThanNhiet, HuyetAp, ChanDoan, DienBien, PhanUngPhu, 
@@ -345,7 +337,6 @@ INSERT INTO PhieuKhamBenh (
     'Thuong', 'ChoThanhToan'
 );
 
--- Phiếu 2: Khám định kỳ cho HS01 (Gắn với Lịch hẹn LH01)
 INSERT INTO PhieuKhamBenh (
     MaPhieuKham, MaHoSo, MaBS, MaKhoa, MaLichHen, NgayGioKham, 
     TrieuChung, ThanNhiet, HuyetAp, ChanDoan, DienBien, PhanUngPhu, 
@@ -357,11 +348,9 @@ INSERT INTO PhieuKhamBenh (
     'DinhKy', 'ChoThanhToan'
 );
 
--- Cập nhật trạng thái Lịch hẹn sang 'DaKham' sau khi tạo phiếu khám định kỳ
 UPDATE LichHenDinhKy SET TrangThai = 'DaKham' WHERE MaLichHen = 'LH01';
 GO
 
--- 8. THÊM CHỈ ĐỊNH XÉT NGHIỆM (ChiDinhXetNghiem)
 INSERT INTO ChiDinhXetNghiem (
     MaPhieuKham, MaXetNghiem, NgayChiDinh, DonGiaApDung, KetQua, NgayThucHien, TrangThai
 ) VALUES 
@@ -369,8 +358,7 @@ INSERT INTO ChiDinhXetNghiem (
 ('PK01', 'XN03', '2026-10-18 09:15:00', 150000.00, N'Rốn phổi đậm, không thấy tổn thương xơ rãnh', '2026-10-18 10:30:00', 'DaCoKetQua');
 GO
 
--- 9. LẬP TOA THUỐC QUA STORED PROCEDURE (sp_LapToaThuoc)
--- Chuẩn bị bảng tạm cho danh sách thuốc kê cho PK01
+
 DECLARE @ToaThuocTab dbo.DongToaThuoc;
 
 INSERT INTO @ToaThuocTab (MaThuoc, SoLuong, LieuDung, CachDung) VALUES
@@ -385,28 +373,25 @@ EXEC dbo.sp_LapToaThuoc
     @Dong = @ToaThuocTab;
 GO
 
--- 10. THÊM HÓA ĐƠN VIỆN PHÍ (HoaDonVienPhi)
--- Hóa đơn PK01 (Khám thường): Tiền khám (100.000) + XN (270.000) + Thuốc (72.000) = 442.000đ
+
 INSERT INTO HoaDonVienPhi (
     SoHoaDon, MaPhieuKham, NgayThanhToan, TongTienKham, TongTienXN, TongTienThuoc, MienGiam, DaThanhToan
 ) VALUES (
     'HD01', 'PK01', '2026-10-18 11:00:00', 100000.00, 270000.00, 72000.00, 0.00, 1
 );
 
--- Hóa đơn PK02 (Khám định kỳ): Tiền khám (100.000) được Miễn giảm (100.000) -> Tổng = 0đ
 INSERT INTO HoaDonVienPhi (
     SoHoaDon, MaPhieuKham, NgayThanhToan, TongTienKham, TongTienXN, TongTienThuoc, MienGiam, DaThanhToan
 ) VALUES (
     'HD02', 'PK02', '2026-10-25 09:00:00', 100000.00, 0.00, 0.00, 100000.00, 1
 );
 
--- Xác nhận Phát thuốc cho TOA01 sau khi đã thanh toán HD01
+
 UPDATE ToaThuoc 
 SET DaPhat = 1, NgayPhat = '2026-10-18 11:15:00' 
 WHERE MaToa = 'TOA01';
 GO
 
--- 11. HOÀN TẤT VÀ CHỐT HỒ SƠ QUA STORED PROCEDURE (sp_HoanTatPhieu)
 EXEC dbo.sp_HoanTatPhieu 
     @MaPhieuKham = 'PK01', 
     @NguoiXacNhan = N'NV_NguyenThiHoa';
@@ -416,13 +401,4 @@ EXEC dbo.sp_HoanTatPhieu
     @NguoiXacNhan = N'NV_NguyenThiHoa';
 GO
 
-
-SELECT * FROM BenhNhan;
-SELECT * FROM HoSoBenhAn;
-SELECT * FROM PhieuThuLePhi;
-SELECT * FROM PhieuKhamBenh;
-SELECT * FROM ChiDinhXetNghiem;
-SELECT * FROM ToaThuoc;
-SELECT * FROM ChiTietToaThuoc;
-SELECT * FROM HoaDonVienPhi;
 

@@ -17,7 +17,7 @@ namespace eShoppingApp.UI
         {
             CapNhatTrangThai();
 
-            // Khi vừa bật ứng dụng, nếu chưa đăng nhập -> Tự động bật Form Đăng nhập trước
+
             if (string.IsNullOrEmpty(AccountService.CurrentMaKH))
             {
                 YeuCauDangNhap();
@@ -31,7 +31,7 @@ namespace eShoppingApp.UI
             {
                 CapNhatTrangThai();
 
-                // Sau khi đăng nhập thành công -> Tự động mở Màn hình Mua sắm
+
                 MoFormDanhSachSanPham();
                 return true;
             }
@@ -40,7 +40,7 @@ namespace eShoppingApp.UI
 
         private void MoFormDanhSachSanPham()
         {
-            // Kiểm tra nếu Form đã mở rồi thì chỉ cần Activate
+
             foreach (Form child in this.MdiChildren)
             {
                 if (child is frmDanhSachSanPham)
@@ -50,7 +50,7 @@ namespace eShoppingApp.UI
                 }
             }
 
-            // Nếu chưa mở thì tạo mới Form con
+
             frmDanhSachSanPham frmSP = new frmDanhSachSanPham();
             frmSP.MdiParent = this;
             frmSP.Show();
@@ -82,7 +82,7 @@ namespace eShoppingApp.UI
             AccountService.CurrentMaKH = "";
             AccountService.CurrentHoTen = "";
 
-            // Đóng tất cả Form con (Form Mua sắm) khi đăng xuất
+  
             foreach (Form child in this.MdiChildren)
             {
                 child.Close();
@@ -91,13 +91,13 @@ namespace eShoppingApp.UI
             CapNhatTrangThai();
             MessageBox.Show("Đã đăng xuất tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // Yêu cầu đăng nhập lại
+
             YeuCauDangNhap();
         }
 
         private void danhSachSPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            // Kiểm tra nếu chưa đăng nhập thì bắt đăng nhập trước
+  
             if (string.IsNullOrEmpty(AccountService.CurrentMaKH))
             {
                 MessageBox.Show("Bạn cần phải đăng nhập tài khoản trước khi thực hiện mua sắm!", "Yêu cầu đăng nhập", MessageBoxButtons.OK, MessageBoxIcon.Warning);

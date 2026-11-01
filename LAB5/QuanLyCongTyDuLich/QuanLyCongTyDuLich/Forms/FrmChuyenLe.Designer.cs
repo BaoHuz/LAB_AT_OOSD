@@ -33,7 +33,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
 
-            // Form Layout
+
             this.txtMa.Location = new System.Drawing.Point(90, 15); this.txtMa.Size = new System.Drawing.Size(150, 23);
             this.cboTour.Location = new System.Drawing.Point(300, 15); this.cboTour.Size = new System.Drawing.Size(350, 23); this.cboTour.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboTour.SelectedIndexChanged += new System.EventHandler(this.TinhNgayVe);

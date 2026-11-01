@@ -19,9 +19,9 @@ namespace eShoppingApp.UI
 
         private void frmThanhToan_Load(object sender, EventArgs e)
         {
-            cbLoaiPhieu.SelectedIndex = 1; // Mặc định CPN
-            cbKhuVuc.SelectedIndex = 0;    // Mặc định Nội thành
-            cbLoaiThe.SelectedIndex = 0;     // Mặc định VISA
+            cbLoaiPhieu.SelectedIndex = 1; 
+            cbKhuVuc.SelectedIndex = 0;    
+            cbLoaiThe.SelectedIndex = 0;    
 
             TinhTongTien();
         }
@@ -45,7 +45,7 @@ namespace eShoppingApp.UI
 
         private void btnThanhToan_Click(object sender, EventArgs e)
         {
-            // Kiểm tra nhập liệu trống
+   
             if (string.IsNullOrWhiteSpace(txtHoTen.Text) ||
                 string.IsNullOrWhiteSpace(txtDiaChi.Text) ||
                 string.IsNullOrWhiteSpace(txtSDT.Text))
@@ -62,8 +62,18 @@ namespace eShoppingApp.UI
                 return;
             }
 
-            // Gọi OrderService tiến hành xác thực thanh toán & lưu CSDL
-            string maKH = "KH001"; // Giả định ID khách hàng đã đăng nhập
+            string maKH = AccountService.CurrentMaKH;
+
+            if (string.IsNullOrWhiteSpace(maKH))
+            {
+                MessageBox.Show(
+                    "Vui lòng đăng nhập trước khi đặt hàng.",
+                    "Yêu cầu đăng nhập",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+                return;
+            }
             bool isSuccess = orderService.ProcessOrder(
                 maKH,
                 cartItems,

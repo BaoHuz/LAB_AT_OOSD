@@ -1,102 +1,665 @@
-# BÁO CÁO BÀI THỰC HÀNH LAB 3 - NỔI BẬT NGIỆP VỤ QUẢN LÝ KHÁCH SẠN
+# LAB 3 - HỆ THỐNG QUẢN LÝ KHÁCH SẠN
 
-## 1. THÔNG TIN SINH VIÊN
-* **Họ và tên:** Nguyễn Hữu Bảo
-* **Mã số sinh viên (MSSV):** 1250080016
-* **Tên bài Lab:** LAB 3 - Khảo sát, Thiết kế & Phát triển Hệ thống Quản lý Khách sạn
-* **Học phần:** Phân tích và Thiết kế Hướng đối tượng (OOSD)
-* **Link Repository GitHub:** https://github.com/BaoHuz/LAB_AT_OOSD
+## 1. Thông tin sinh viên
 
----
-
-## 2. MÔI TRƯỜNG & PHIÊN BẢN (ENVIRONMENT & VERSIONS)
-* **Hệ điều hành:** Windows 11
-* **Ngôn ngữ lập trình:** C# (.NET Framework 4.7.2)
-* **Công cụ phát triển (IDE):** Visual Studio 2022
-* **Hệ quản trị CSDL:** Microsoft SQL Server 2019 / LocalDB
-* **Công cụ vẽ biểu đồ:** Draw.io / StarUML
+- **Họ và tên:** Nguyễn Hữu Bảo
+- **MSSV:** 1250080016
+- **Lớp:** 12_ĐH_CNPM1
+- **Môn học:** Phương pháp phát triển phần mềm hướng đối tượng
+- **Bài thực hành:** LAB 3 - Hệ thống quản lý khách sạn
+- **Repository:** https://github.com/BaoHuz/LAB_AT_OOSD
 
 ---
 
-## 3. NỘI DUNG ĐÃ THỰC HIỆN (COMPLETED CONTENT)
+## 2. Mục tiêu bài LAB
 
-### A. Phân tích & Thiết kế Mô hình (UML)
-- [x] **Khảo sát hiện trạng & Phân loại nghiệp vụ:** Lưu trữ, Tra cứu, Tính toán, Kết xuất / Thống kê.
-- [x] **Xác định các thành phần hệ thống:** Classes, Primary/Foreign Keys, Associations, Multiplicities, Actors, Use Cases.
-- [x] **Đặc tả Use Case trọng tâm:** Đặt phòng, Nhận phòng, Sử dụng dịch vụ, Trả phòng & Đền bù, Thanh toán hóa đơn.
-- [x] **Xây dựng hệ thống sơ đồ/biểu đồ UML:**
-  - Biểu đồ Use Case tổng quát và Use Case phân rã.
-  - Biểu đồ Lớp phân tích (Analysis Class Diagram) & Biểu đồ Lớp chi tiết (Detail Class Diagram).
-  - Biểu đồ Trạng thái (State Machine Diagram).
-  - Các Biểu đồ Tuần tự (Sequence Diagrams) & Biểu đồ Hoạt động (Activity Diagrams).
+Xây dựng ứng dụng **Quản lý khách sạn** bằng C# Windows Forms kết hợp SQL Server.
 
-### B. Thiết kế Cơ sở Dữ liệu (SQL Server)
-- [x] Thiết kế 18 bảng CSDL chuẩn hóa (3NF) chứa khóa chính, khóa ngoại, chỉ mục (Index) và các ràng buộc (`CHECK`, `DEFAULT`, `UNIQUE`):
-  - `Phong`, `KhuVuc`, `LoaiTienNghi`, `TienNghi`, `PhieuLapDat`
-  - `KhachHang`, `PhieuDatPhong`, `ChiTietDatPhong`, `NguoiLuuTru`
-  - `DichVu`, `PhieuSuDungDV`, `ChiTietPhieuSuDungDV`
-  - `QuyDinhDenBu`, `PhieuDenBu`, `ChiTietPhieuDenBu`
-  - `HoaDon`, `ThanhToan`, `NhanVien`
+Các nội dung chính đã thực hiện:
 
-### C. Lập trình Hệ thống WinForms (C#)
-- [x] **FrmMain**: Màn hình điều hướng chính.
-- [x] **FrmDanhMuc**: Quản lý danh mục Phòng, Loại tiện nghi, Tiện nghi, Dịch vụ, Nhân viên.
-- [x] **FrmPhongTienNghi**: Lắp đặt & Quản lý thiết bị tiện nghi theo phòng.
-- [x] **FrmDatPhong**: Đa tab (Khách hàng - Đặt phòng - Nhận phòng/Người lưu trú).
-- [x] **FrmDichVu**: Ghi nhận và cộng dồn dịch vụ sử dụng theo phiếu lưu trú.
-- [x] **FrmTraPhong**: Lập phiếu đền bù, lập hóa đơn, thanh toán đa hình thức và hoàn tất trả phòng.
-- [x] **FrmThongKe**: Thống kê doanh thu hóa đơn, tổng đền bù và tần suất sử dụng dịch vụ theo mốc thời gian.
+- Xây dựng cơ sở dữ liệu quản lý khách sạn.
+- Quản lý khu vực, nhân viên, loại tiện nghi, dịch vụ và quy định đền bù.
+- Quản lý phòng và tiện nghi trong phòng.
+- Quản lý việc lắp đặt, luân chuyển tiện nghi.
+- Quản lý khách hàng.
+- Lập phiếu đặt phòng.
+- Nhận phòng và quản lý người lưu trú.
+- Ghi nhận dịch vụ khách sử dụng.
+- Trả phòng.
+- Lập phiếu đền bù.
+- Lập hóa đơn.
+- Thanh toán hóa đơn.
+- Thống kê hoạt động khách sạn theo khoảng thời gian.
+- Chụp ảnh kết quả thực tế và đưa vào báo cáo Word.
 
 ---
 
-## 4. KẾT QUẢ KIỂM THỬ NGIỆP VỤ (TESTING RESULTS)
+## 3. Công nghệ và môi trường
 
-Hệ thống đã vượt qua các bài test kiểm thử quy tắc nghiệp vụ thực tế:
-1. **Kiểm thử sức chứa & Trạng thái phòng:** Báo lỗi nếu xếp số người vượt quá `SoNguoiToiDa` hoặc phòng không ở trạng thái `Trống`.
-2. **Kiểm thử trùng lịch lắp đặt:** Ràng buộc `UQ_PhieuLapDat_ThietBi_Ngay` ngăn chặn 1 thiết bị tiện nghi lắp cùng lúc vào nhiều phòng trong cùng 1 ngày.
-3. **Kiểm thử cộng dồn dịch vụ:** Tự động tính toán tổng tiền (`ThanhTien = SoLuong * DonGia`) và cộng dồn các lượt gọi dịch vụ trong ngày.
-4. **Kiểm thử Đền bù & Hóa đơn:** Tính toán chính xác tổng phí đền bù hư hỏng vật tư, tiền phòng theo số ngày ở thực tế và trừ đi tiền cọc.
-5. **Kiểm thử Thanh toán:** Hỗ trợ linh hoạt 4 hình thức thanh toán (`Tiền mặt`, `Chuyển khoản`, `Thẻ`, `Ví điện tử`).
-
----
-
-## 5. CÁC LỖI GẶP PHẢI & CÁCH KHẮC PHÚC (ISSUES & FIXES)
-
-1. **Lỗi `Could not copy ... because it is being used by another process`:**
-   - *Nguyên nhân:* Tiến trình `QuanLyKhachSan.exe` vẫn đang chạy ngầm làm khóa file thực thi.
-   - *Khắc phục:* Sử dụng `Task Manager` để `End Task` tiến trình chạy ngầm hoặc chọn `Build -> Clean Solution` trong Visual Studio.
-
-2. **Lỗi `Keyword not supported: 'data source'`:**
-   - *Nguyên nhân:* Chuỗi `connectionString` trong `App.config` bị xuống hàng đột ngột hoặc gõ sai quy cách từ khóa `Data Source`.
-   - *Khắc phục:* Định dạng lại XML trên 1 dòng duy nhất và chuẩn hóa lại cú pháp: `Data Source=...;Initial Catalog=QuanLyKhachSan;Integrated Security=True;`.
-
-3. **Lỗi `Cannot open database "QuanLyKhachSan" requested by the login`:**
-   - *Nguyên nhân:* Chưa chạy file script SQL để khởi tạo Database hoặc cấu hình sai tên SQL Instance.
-   - *Khắc phục:* Chạy file `QuanLyKhachSan.sql` trong SQL Server Management Studio (SSMS) để khởi tạo Database và dữ liệu mẫu.
-
-4. **Lỗi `Violation of PRIMARY KEY constraint` / `FOREIGN KEY constraint` khi chèn dữ liệu:**
-   - *Nguyên nhân:* Chèn trùng khóa chính hoặc chèn dữ liệu không tuân thủ thứ tự mối quan hệ cha-con giữa các bảng.
-   - *Khắc phục:* Thêm câu lệnh `DELETE` dọn dẹp bảng theo thứ tự từ bảng con đến bảng cha trước khi thực hiện `INSERT`.
+- **Hệ điều hành:** Windows 11
+- **IDE:** Microsoft Visual Studio 2022
+- **Ngôn ngữ:** C#
+- **Framework:** .NET Framework 4.7.2
+- **Giao diện:** Windows Forms
+- **Cơ sở dữ liệu:** Microsoft SQL Server
+- **Truy cập dữ liệu:** ADO.NET
+- **Kiến trúc chương trình:** UI → Service → Data → SQL Server
 
 ---
 
-## 6. HƯỚNG DẪN CHẠY LẠI DỰ ÁN (HOW TO RUN)
+## 4. Cấu trúc thư mục
 
-Dành cho Giảng viên / Người kiểm thử dự án:
+```text
+LAB3/
+│
+├── 1250080016_NguyenHuuBao_12_ĐH_CNPM1_LAB3.docx
+├── QuanLyKhachSan.sql
+├── README.md
+├── .vs/
+│
+└── QuanLyKhachSan/
+    │
+    ├── QuanLyKhachSan.sln
+    │
+    └── QuanLyKhachSan/
+        ├── App.config
+        ├── Program.cs
+        │
+        ├── Data/
+        │   └── Db.cs
+        │
+        ├── Services/
+        │   ├── DanhMucService.cs
+        │   ├── PhongTienNghiService.cs
+        │   ├── DatPhongService.cs
+        │   ├── DichVuService.cs
+        │   ├── TraPhongService.cs
+        │   └── ThongKeService.cs
+        │
+        └── Forms/
+            ├── FrmMain.cs
+            ├── FrmMain.Designer.cs
+            ├── FrmDanhMuc.cs
+            ├── FrmDanhMuc.Designer.cs
+            ├── FrmPhongTienNghi.cs
+            ├── FrmPhongTienNghi.Designer.cs
+            ├── FrmDatPhong.cs
+            ├── FrmDatPhong.Designer.cs
+            ├── FrmDichVu.cs
+            ├── FrmDichVu.Designer.cs
+            ├── FrmTraPhong.cs
+            ├── FrmTraPhong.Designer.cs
+            ├── FrmThongKe.cs
+            └── FrmThongKe.Designer.cs
+```
 
-1. **Bước 1 (Khởi tạo CSDL):**
-   - Mở phần mềm SQL Server Management Studio (SSMS).
-   - Mở file `QuanLyKhachSan.sql` trong thư mục `LAB3` và nhấn **Execute (F5)** để tạo CSDL và chèn toàn bộ dữ liệu mẫu.
-
-2. **Bước 2 (Cấu hình chuỗi kết nối):**
-   - Mở dự án `QuanLyKhachSan.sln` bằng Visual Studio 2022.
-   - Mở file `App.config`, chỉnh lại giá trị `Data Source` cho phù hợp với Server SQL trên máy kiểm thử (ví dụ: `.\SQLEXPRESS` hoặc `(localdb)\MSSQLLocalDB`).
-
-3. **Bước 3 (Thực thi dự án):**
-   - Bấm `Ctrl + Shift + B` để Rebuild Solution.
-   - Bấm **`F5`** (hoặc nút `Start`) để khởi chạy chương trình.
+> `.vs`, `bin` và `obj` là các thư mục do Visual Studio tự sinh, không phải mã nguồn chính của bài.
 
 ---
 
-## 7. BẰNG CHỨNG THỰC HÀNH (EVIDENCE)
-- [x] File báo cáo chi tiết Word (chứa hình ảnh giao diện thực tế và cấu trúc CSDL chụp từ máy cá nhân) đã được đính kèm trong thư mục `LAB3/1250080016_NguyenHuuBao_12_ĐH_CNPM1_LAB3.docx`.
+## 5. Thiết kế cơ sở dữ liệu
+
+File SQL:
+
+```text
+QuanLyKhachSan.sql
+```
+
+Hệ thống sử dụng 18 bảng:
+
+1. `KhuVuc`
+2. `NhanVien`
+3. `LoaiTienNghi`
+4. `TienNghi`
+5. `Phong`
+6. `PhieuLapDat`
+7. `KhachHang`
+8. `PhieuDatPhong`
+9. `ChiTietDatPhong`
+10. `NguoiLuuTru`
+11. `DichVu`
+12. `PhieuSuDungDV`
+13. `ChiTietPhieuSuDungDV`
+14. `QuyDinhDenBu`
+15. `PhieuDenBu`
+16. `ChiTietPhieuDenBu`
+17. `HoaDon`
+18. `ThanhToan`
+
+Báo cáo Word đã chụp dữ liệu thực tế của các bảng và sơ đồ Database Diagram trong SQL Server.
+
+---
+
+## 6. Các chức năng đã thực hiện
+
+### 6.1. `FrmMain` - Màn hình chính
+
+Màn hình điều hướng đến các chức năng:
+
+- Danh mục
+- Phòng - Tiện nghi
+- Đặt / Nhận phòng
+- Sử dụng dịch vụ
+- Trả phòng - Thanh toán
+- Thống kê
+- Thoát chương trình
+
+Các Form con được mở bằng `ShowDialog()`.
+
+---
+
+### 6.2. `FrmDanhMuc` - Quản lý danh mục
+
+Quản lý các danh mục cơ bản:
+
+#### Khu vực
+
+- Thêm khu vực.
+- Hiển thị danh sách khu vực.
+
+Thông tin:
+
+- Mã khu vực
+- Tên khu vực
+
+#### Nhân viên
+
+- Thêm nhân viên.
+- Hiển thị danh sách nhân viên.
+
+Thông tin:
+
+- Mã nhân viên
+- Họ tên
+- Vai trò
+- Số điện thoại
+
+#### Loại tiện nghi
+
+- Thêm loại tiện nghi.
+- Hiển thị danh sách loại tiện nghi.
+
+#### Dịch vụ
+
+- Thêm dịch vụ.
+- Quản lý:
+  - Mã dịch vụ
+  - Tên dịch vụ
+  - Đơn vị tính
+  - Đơn giá
+
+#### Quy định đền bù
+
+- Thêm quy định đền bù.
+- Liên kết loại tiện nghi.
+- Xác định mức độ thiệt hại.
+- Xác định số tiền đền bù.
+
+---
+
+## 7. Quản lý phòng và tiện nghi
+
+### `FrmPhongTienNghi`
+
+Thực hiện:
+
+- Thêm phòng.
+- Xác định khu vực của phòng.
+- Xác định sức chứa tối đa.
+- Xác định đơn giá theo ngày.
+- Thêm tiện nghi.
+- Quản lý số thứ tự thiết bị.
+- Quản lý tình trạng tiện nghi.
+- Lập phiếu lắp đặt tiện nghi vào phòng.
+- Ghi nhận nhân viên thực hiện.
+- Ghi nhận ngày lắp đặt.
+
+Các danh sách được tải trực tiếp từ SQL Server thông qua lớp Service.
+
+---
+
+## 8. Đặt phòng và nhận phòng
+
+### `FrmDatPhong`
+
+Form gồm các nghiệp vụ:
+
+### Khách hàng
+
+- Thêm khách hàng.
+- Quản lý:
+  - Mã khách
+  - Họ tên
+  - CCCD/CMND
+  - Quốc tịch
+  - Số điện thoại
+
+### Đặt phòng
+
+- Chọn khách hàng.
+- Chọn nhân viên lập phiếu.
+- Chọn ngày lập.
+- Chọn ngày nhận.
+- Chọn ngày trả.
+- Nhập tiền cọc.
+- Chọn kênh đặt:
+  - Điện thoại
+  - Website
+  - Trực tiếp
+- Chọn một hoặc nhiều phòng.
+- Kiểm tra phòng đã được chọn trước khi thêm vào danh sách.
+- Lập phiếu đặt phòng.
+
+### Nhận phòng
+
+- Chọn phiếu đặt.
+- Xem chi tiết các phòng đã đặt.
+- Thêm người lưu trú.
+- Nhận phòng.
+- Có chức năng đánh dấu `No Show` nếu khách không nhận phòng.
+
+---
+
+## 9. Sử dụng dịch vụ
+
+### `FrmDichVu`
+
+Thực hiện:
+
+- Chọn phiếu khách đang lưu trú.
+- Xác định phòng.
+- Chọn dịch vụ.
+- Chọn ngày sử dụng.
+- Nhập số lượng.
+- Ghi nhận lượt sử dụng dịch vụ.
+- Hiển thị lịch sử dịch vụ đã sử dụng.
+- Tính thành tiền dựa trên số lượng và đơn giá.
+
+Một số dịch vụ mẫu:
+
+- Ăn sáng
+- Tắm hơi
+- Karaoke
+
+---
+
+## 10. Trả phòng - Đền bù - Hóa đơn - Thanh toán
+
+### `FrmTraPhong`
+
+Form thực hiện nhiều nghiệp vụ liên quan đến quá trình trả phòng.
+
+### Trả phòng
+
+- Chọn phiếu khách đang ở.
+- Hiển thị các phòng trong phiếu.
+- Kiểm tra tiện nghi trong phòng.
+
+### Đền bù
+
+Nếu có tiện nghi bị mất hoặc hư hỏng:
+
+- Chọn tiện nghi.
+- Nhập mức độ thiệt hại.
+- Nhập số tiền đền bù.
+- Không cho thêm trùng cùng một tiện nghi vào phiếu.
+- Lập phiếu đền bù.
+- Ghi nhận nhân viên lập phiếu.
+
+### Hóa đơn
+
+- Tạo hóa đơn theo phiếu đặt.
+- Tính số ngày thực tế.
+- Tính tiền phòng.
+- Tính tiền dịch vụ.
+- Tổng hợp tiền đền bù.
+- Khấu trừ tiền cọc nếu nghiệp vụ yêu cầu.
+- Lưu hóa đơn.
+
+### Thanh toán
+
+Hỗ trợ các hình thức:
+
+- Tiền mặt
+- Chuyển khoản
+- Thẻ
+- Ví điện tử
+
+Thông tin thanh toán gồm:
+
+- Mã thanh toán
+- Số hóa đơn
+- Ngày thanh toán
+- Hình thức
+- Số tiền
+
+Sau khi hoàn tất có thể thực hiện chức năng trả phòng.
+
+---
+
+## 11. Thống kê
+
+### `FrmThongKe`
+
+Cho phép chọn:
+
+```text
+Từ ngày → Đến ngày
+```
+
+Hệ thống thống kê:
+
+- Số phiếu đặt.
+- Số lượt đang ở.
+- Số hóa đơn.
+- Doanh thu hóa đơn.
+- Tổng tiền đền bù.
+- Danh sách dịch vụ đã sử dụng.
+- Tổng số lượng sử dụng từng dịch vụ.
+- Tổng tiền của từng dịch vụ.
+
+Có kiểm tra dữ liệu:
+
+```text
+Đến ngày không được trước Từ ngày.
+```
+
+---
+
+## 12. Kiểm tra nghiệp vụ đã thực hiện
+
+Trong quá trình chạy thử, các nghiệp vụ sau đã được kiểm tra:
+
+### Phòng
+
+- Không xếp số người vượt quá sức chứa tối đa.
+- Chỉ sử dụng phòng phù hợp với trạng thái hiện tại.
+
+### Tiện nghi
+
+- Quản lý thiết bị tiện nghi theo phòng.
+- Theo dõi tình trạng thiết bị.
+- Tránh ghi nhận trùng thông tin lắp đặt không hợp lệ.
+
+### Đặt phòng
+
+- Không thêm cùng một phòng hai lần vào danh sách chọn.
+- Lưu nhiều phòng trong một phiếu đặt.
+- Quản lý số người của từng phòng.
+
+### Dịch vụ
+
+- Ghi nhận số lượng dịch vụ.
+- Tính thành tiền dựa trên:
+
+```text
+Thành tiền = Số lượng × Đơn giá
+```
+
+### Đền bù
+
+- Không thêm trùng một tiện nghi trong cùng phiếu đền bù.
+- Ghi nhận mức độ thiệt hại.
+- Ghi nhận số tiền đền bù.
+
+### Thanh toán
+
+- Hỗ trợ nhiều hình thức thanh toán.
+- Ghi nhận thông tin thanh toán vào cơ sở dữ liệu.
+
+---
+
+## 13. Kết quả thực hiện
+
+Bài LAB đã hoàn thành các nội dung chính:
+
+- Tạo cơ sở dữ liệu SQL Server.
+- Tạo và nhập dữ liệu mẫu cho 18 bảng.
+- Tạo Database Diagram.
+- Xây dựng chương trình C# WinForms.
+- Kết nối WinForms với SQL Server bằng ADO.NET.
+- Tách chương trình thành các lớp `Forms`, `Services` và `Data`.
+- Quản lý danh mục khách sạn.
+- Quản lý phòng và tiện nghi.
+- Quản lý khách hàng.
+- Đặt và nhận phòng.
+- Ghi nhận người lưu trú.
+- Sử dụng dịch vụ.
+- Xử lý đền bù.
+- Lập hóa đơn.
+- Thanh toán.
+- Hoàn tất trả phòng.
+- Thống kê theo khoảng thời gian.
+- Chụp ảnh kết quả thực tế và đưa vào báo cáo Word.
+
+File báo cáo:
+
+```text
+1250080016_NguyenHuuBao_12_ĐH_CNPM1_LAB3.docx
+```
+
+---
+
+## 14. Một số lỗi có thể gặp và cách khắc phục
+
+### 14.1. Lỗi file `.exe` đang được sử dụng
+
+Ví dụ:
+
+```text
+Could not copy ... because it is being used by another process
+```
+
+**Nguyên nhân:**
+
+Ứng dụng `QuanLyKhachSan.exe` vẫn còn chạy.
+
+**Khắc phục:**
+
+- Đóng chương trình đang chạy.
+- Mở Task Manager.
+- End Task tiến trình `QuanLyKhachSan.exe`.
+- Chọn:
+
+```text
+Build → Clean Solution
+Build → Rebuild Solution
+```
+
+---
+
+### 14.2. Lỗi chuỗi kết nối
+
+Ví dụ:
+
+```text
+Keyword not supported: 'data source'
+```
+
+**Nguyên nhân:**
+
+Connection String trong `App.config` bị sai cú pháp.
+
+**Khắc phục:**
+
+Kiểm tra lại:
+
+```xml
+<connectionStrings>
+    <add name="QuanLyKhachSanDb"
+         connectionString="Data Source=.;Initial Catalog=QuanLyKhachSan;Integrated Security=True;"
+         providerName="System.Data.SqlClient" />
+</connectionStrings>
+```
+
+Thay `Data Source` cho phù hợp SQL Server trên máy.
+
+Ví dụ SQL Server Express:
+
+```text
+Data Source=.\SQLEXPRESS
+```
+
+Hoặc LocalDB:
+
+```text
+Data Source=(localdb)\MSSQLLocalDB
+```
+
+---
+
+### 14.3. Không mở được Database
+
+Ví dụ:
+
+```text
+Cannot open database "QuanLyKhachSan" requested by the login
+```
+
+**Nguyên nhân:**
+
+- Chưa chạy script SQL.
+- Sai tên Database.
+- Sai SQL Server Instance.
+
+**Khắc phục:**
+
+Chạy lại:
+
+```text
+QuanLyKhachSan.sql
+```
+
+sau đó kiểm tra Database đã được tạo thành công.
+
+---
+
+### 14.4. PRIMARY KEY hoặc FOREIGN KEY bị lỗi
+
+Ví dụ:
+
+```text
+Violation of PRIMARY KEY constraint
+Violation of FOREIGN KEY constraint
+```
+
+**Nguyên nhân:**
+
+- Insert trùng khóa chính.
+- Dữ liệu cha chưa tồn tại.
+- Xóa dữ liệu đang được bảng khác tham chiếu.
+
+**Khắc phục:**
+
+- Kiểm tra dữ liệu trước khi thêm.
+- Insert bảng cha trước bảng con.
+- Nếu cần xóa dữ liệu thử nghiệm, xóa bảng con trước bảng cha.
+
+---
+
+## 15. Hướng dẫn chạy lại dự án
+
+### Bước 1 - Tạo Database
+
+Mở:
+
+```text
+QuanLyKhachSan.sql
+```
+
+bằng SQL Server Management Studio hoặc SQL Server Object Explorer.
+
+Chạy toàn bộ script.
+
+Kiểm tra Database và dữ liệu mẫu đã được tạo.
+
+---
+
+### Bước 2 - Mở Visual Studio
+
+Mở:
+
+```text
+QuanLyKhachSan/QuanLyKhachSan.sln
+```
+
+bằng Visual Studio 2022.
+
+---
+
+### Bước 3 - Cấu hình Connection String
+
+Mở:
+
+```text
+App.config
+```
+
+Kiểm tra `Data Source` và tên Database.
+
+---
+
+### Bước 4 - Build
+
+Chọn:
+
+```text
+Build
+→ Rebuild Solution
+```
+
+hoặc:
+
+```text
+Ctrl + Shift + B
+```
+
+Kiểm tra project không còn lỗi compile.
+
+---
+
+### Bước 5 - Chạy
+
+Nhấn:
+
+```text
+F5
+```
+
+hoặc nút:
+
+```text
+Start
+```
+
+---
+
+## 16. Trình tự kiểm tra chương trình
+
+Có thể kiểm tra lần lượt:
+
+```text
+FrmMain
+   ↓
+Danh mục
+   ↓
+Phòng - Tiện nghi
+   ↓
+Khách hàng
+   ↓
+Đặt phòng
+   ↓
+Nhận phòng
+   ↓
+Sử dụng dịch vụ
+   ↓
+Trả phòng / Đền bù
+   ↓
+Lập hóa đơn
+   ↓
+Thanh toán
+   ↓
+Thống kê
+```
+
+---

@@ -23,9 +23,7 @@
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnDangKy = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
+
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.Navy;
@@ -33,40 +31,30 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(227, 25);
             this.lblTitle.Text = "ĐĂNG NHẬP KHÁCH HÀNG";
-            // 
-            // lblUser
-            // 
+
             this.lblUser.AutoSize = true;
             this.lblUser.Location = new System.Drawing.Point(30, 70);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(84, 13);
             this.lblUser.Text = "Tên đăng nhập:";
-            // 
-            // txtUser
-            // 
+ 
             this.txtUser.Location = new System.Drawing.Point(130, 67);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(220, 20);
             this.txtUser.Text = "nguyenvanan";
-            // 
-            // lblPass
-            // 
+
             this.lblPass.AutoSize = true;
             this.lblPass.Location = new System.Drawing.Point(30, 110);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(55, 13);
             this.lblPass.Text = "Mật khẩu:";
-            // 
-            // txtPass
-            // 
+
             this.txtPass.Location = new System.Drawing.Point(130, 107);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(220, 20);
             this.txtPass.Text = "123456";
-            // 
-            // btnDangNhap
-            // 
+
             this.btnDangNhap.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -77,9 +65,7 @@
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
-            // 
-            // btnDangKy
-            // 
+
             this.btnDangKy.BackColor = System.Drawing.Color.Gray;
             this.btnDangKy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangKy.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -90,9 +76,7 @@
             this.btnDangKy.Text = "Đăng Ký Mới";
             this.btnDangKy.UseVisualStyleBackColor = false;
             this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
-            // 
-            // frmDangNhap
-            // 
+
             this.ClientSize = new System.Drawing.Size(384, 211);
             this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.btnDangNhap);

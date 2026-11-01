@@ -31,9 +31,7 @@
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblTitle
-            // 
+
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
             this.lblTitle.ForeColor = System.Drawing.Color.Navy;
@@ -41,94 +39,68 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(232, 25);
             this.lblTitle.Text = "ĐĂNG KÝ TÀI KHOẢN MỚI";
-            // 
-            // lblHoTen
-            // 
+
             this.lblHoTen.AutoSize = true;
             this.lblHoTen.Location = new System.Drawing.Point(30, 60);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(57, 13);
             this.lblHoTen.Text = "Họ và tên:";
-            // 
-            // txtHoTen
-            // 
+
             this.txtHoTen.Location = new System.Drawing.Point(120, 57);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(230, 20);
-            // 
-            // lblUser
-            // 
+
             this.lblUser.AutoSize = true;
             this.lblUser.Location = new System.Drawing.Point(30, 95);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(84, 13);
             this.lblUser.Text = "Tên đăng nhập:";
-            // 
-            // txtUser
-            // 
+ 
             this.txtUser.Location = new System.Drawing.Point(120, 92);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(230, 20);
-            // 
-            // lblPass
-            // 
+
             this.lblPass.AutoSize = true;
             this.lblPass.Location = new System.Drawing.Point(30, 130);
             this.lblPass.Name = "lblPass";
             this.lblPass.Size = new System.Drawing.Size(55, 13);
             this.lblPass.Text = "Mật khẩu:";
-            // 
-            // txtPass
-            // 
+
             this.txtPass.Location = new System.Drawing.Point(120, 127);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(230, 20);
-            // 
-            // lblEmail
-            // 
+
             this.lblEmail.AutoSize = true;
             this.lblEmail.Location = new System.Drawing.Point(30, 165);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(35, 13);
             this.lblEmail.Text = "Email:";
-            // 
-            // txtEmail
-            // 
+
             this.txtEmail.Location = new System.Drawing.Point(120, 162);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(230, 20);
-            // 
-            // lblPhone
-            // 
+
             this.lblPhone.AutoSize = true;
             this.lblPhone.Location = new System.Drawing.Point(30, 200);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(73, 13);
             this.lblPhone.Text = "Số điện thoại:";
-            // 
-            // txtPhone
-            // 
+
             this.txtPhone.Location = new System.Drawing.Point(120, 197);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(230, 20);
-            // 
-            // lblAddr
-            // 
+
             this.lblAddr.AutoSize = true;
             this.lblAddr.Location = new System.Drawing.Point(30, 235);
             this.lblAddr.Name = "lblAddr";
             this.lblAddr.Size = new System.Drawing.Size(43, 13);
             this.lblAddr.Text = "Địa chỉ:";
-            // 
-            // txtAddr
-            // 
+
             this.txtAddr.Location = new System.Drawing.Point(120, 232);
             this.txtAddr.Name = "txtAddr";
             this.txtAddr.Size = new System.Drawing.Size(230, 20);
-            // 
-            // btnLuu
-            // 
+
             this.btnLuu.BackColor = System.Drawing.Color.ForestGreen;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -139,9 +111,7 @@
             this.btnLuu.Text = "Đăng Ký";
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnHuy
-            // 
+
             this.btnHuy.BackColor = System.Drawing.Color.Gray;
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
@@ -152,9 +122,7 @@
             this.btnHuy.Text = "Hủy Bỏ";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
-            // frmDangKy
-            // 
+
             this.ClientSize = new System.Drawing.Size(384, 321);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnLuu);

@@ -7,7 +7,6 @@ namespace QuanLyHoSoBenhAn.Services
 {
     public class KhamService
     {
-        // Đặt lịch hẹn khám định kỳ quý (sp_DatLichHen)
         public void DatLichHen(string maLichHen, string maHoSo, DateTime ngayHen)
         {
             using (SqlConnection cn = Db.CreateConnection())
@@ -23,7 +22,6 @@ namespace QuanLyHoSoBenhAn.Services
             }
         }
 
-        // Hoàn tất đợt khám (sp_HoanTatPhieu)
         public void HoanTatPhieu(string maPhieuKham, string nguoiXacNhan)
         {
             using (SqlConnection cn = Db.CreateConnection())
@@ -38,7 +36,6 @@ namespace QuanLyHoSoBenhAn.Services
             }
         }
 
-        // Lấy lịch sử khám bệnh theo Mã Hồ Sơ
         public DataTable LayLichSuKham(string maHoSo)
         {
             using (SqlConnection cn = Db.CreateConnection())

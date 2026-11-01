@@ -18,7 +18,7 @@ namespace eShoppingApp.Services
     {
         public decimal CalculateShippingFee(decimal cartTotal, string deliveryType, string area)
         {
-            if (cartTotal >= 5000000) return 0;
+            if (cartTotal >= 5000000 && deliveryType == "CPN_TRONG_NGAY") return 0;
             if (cartTotal >= 1000000 && deliveryType == "CPN") return 0;
 
             decimal baseFee = (area == "NoiThanh") ? 20000 : 45000;
